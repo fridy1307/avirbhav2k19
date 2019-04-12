@@ -1,0 +1,73 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Forms
+	#Misc */
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+
+/* #Basic Styles
+================================================== */
+
+/* ---- Countdown timer ---- */
+
+.Counter {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+ul.countdown li {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-right: 20px;
+}
+
+ul.countdown li span {
+    font-size: 3em;
+    font-weight: bold;
+    color: #f3f3f3;
+    position: relative;
+}
+
+ul.countdown li p.timeRefDays,
+ul.countdown li p.timeRefHours,
+ul.countdown li p.timeRefMinutes,
+ul.countdown li p.timeRefSeconds {
+    margin-top: 10px;
+    color: #f3f3f3;
+    text-transform: uppercase;
+    font: 75% 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+/* ---- Subscribe form---- */
+
+#Subscribe {
+    width: 590px;
+    margin: 25px auto 10px auto;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.2) inset;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 20px;
+}

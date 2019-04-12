@@ -1,0 +1,98 @@
+{% extends 'base3.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/static/events/Ramp Walk/css/style.css">
+    <link rel="stylesheet" href="/static/events/Ramp Walk/css/gallery.css">
+    <style>
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            letter-spacing: 5px;
+            font: 20px "Lato", sans-serif;
+            color: #fff;
+        }
+
+    </style>
+{% endblock %}
+
+{% block body %}
+    <main>
+        <section data-anchor="gallery 1">
+            <div class="caption" style="padding-top: 350px;">
+                <span class="border">love imitating your favorite models?</span><br><br><br>
+                <span class="border">Avirbhav gives you the chance to be the one</span>
+            </div>
+        </section>
+        <section data-anchor="gallery 2">
+            <div class="text-white" style="padding-left: 100px;padding-right: 100px;">
+                <h3 class="text-center" style="padding-top: 100px;">
+                    Walk up the ramp with your attitude, the best designed outfits and on the best of the music. Come participate in this Fashionista, and you pretty girls and handsome boys can be the stars.
+                </h3>
+                <br>
+                <h4>Rules and Regulations :- </h4>
+                <ul>
+                    <li>It is a team event. A team can have 12- 15 members. </li>
+                    <li>Time limit for every team would be 10 minutes (Including setup and the performance both).</li>
+                    <li>Negative marking if participants exceed time limit.</li>
+                    <li>Themes for RAMPWALK <br>
+                        <ol>
+                                <li>Team based(compulsory)</li>
+                                <li>Bollywood</li>
+                                <li>Seasons</li>
+                                <li>Accessories </li>
+                                <li>Time </li>
+                                <li>Colors</li>
+                                <li>Tattoo</li>
+                                <li>Trending topics </li>
+                                
+                        </ol>
+                    </li>
+                    <li>Each team can choose min 4 themes with 1st ( Team based) being the mandatory choice for everyone</li>
+                    <li>A green room would be provided for the changing purpose</li>
+                    <li>Teams have to provide their tracks before a day.</li>
+                    <li>Teams have to bring their own props.</li>
+                    <li>Vulgarity is strongly prohibited. Any form of obscenity will lead to debarring the team from the contest.</li>
+                    <li>Use of cigarettes, alcohol and any unfair means is strongly prohibited.</li>
+                    <li>Teams will be judged on costumes, theme, walking stance and attitude.</li>
+                    <li>Decision of the judges will be final and binding.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- nav buttons -->
+    <nav id="nav">
+        <ul>
+            <li class="nav nav-prev"><button type="button"></button></li>
+            <li class="nav nav-next"><button type="button"></button></li>
+        </ul>
+    </nav>
+
+    <!-- progress indicator -->
+    <div class="page-progress">
+        <svg class="radial-svg" width="50" height="50" transform="rotate(-90 0 0)">
+				<circle class="radial-fill" stroke-width="5" r="14" cx="20" cy="20"></circle>
+			</svg>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+    <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+    <script src="/static/events/Ramp Walk/js/gallery.js"></script>
+{% endblock %}

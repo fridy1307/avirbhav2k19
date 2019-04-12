@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center">Points Table</h1>
+  <div class="card">
+      <div class="card-header">
+          <div class="row text-center">
+              <div class="col"><h3>Name</h3></div>
+              <div class="col"><h3>First</h3></div>
+              <div class="col"><h3>Second</h3></div>
+              <div class="col"><h3>Third</h3></div>
+            </div>
+            </div>
+        
+  </div>
+{% for event in event_details %}
+  {% for type in points %}
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#">{{ event.name }}
+          <a class="btn btn-primary rounded" style="margin-right:5px;float: right;" href="" >{{ event.url}} Page</a>
+        </a>
+      </div>
+      <div id="" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          {% for point in type %}
+          <div class="row text-center">
+            <div class="col">point.name</div>
+            <div class="col">point.First</div>
+            <div class="col">point.Second</div>
+            <div class="col">point.Third</div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  {% endfor %}
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+{% extends 'base3.html' %}
+
+
+{% block head %}
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+
+        .bgimg-1
+        {
+            position: relative;
+            opacity: 0.75;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .bgimg-1 {
+            background-image: url("/static/events/Craft/img/plaster_of_paris.jpg");
+            height: 100%;
+        }
+
+        .caption {
+            position: absolute;
+            width: 100%;
+            color: #000;
+        }
+
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            text-align: center;
+            float: center;
+        }
+
+        .rules {
+            letter-spacing: 5px;
+            font: 20px "Lato", sans-serif;
+            color: #000;
+
+        }
+
+        ol {
+            padding-right: 600px;
+            padding-left: 100px;
+            color: #fff;
+        }
+        .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-left: 5px;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="bgimg-1">
+            <a href="{% url 'craft' %}" class="button">< Back</a>
+        <div class="caption">
+            <h1 style="text-align: center;font-size: 3rem">Castle Ward</h1>
+            <br>
+            <h2 style="text-align: center;font-size: 2.5rem">Plaster of Paris is a great material to use for basic sculpture and craft project because it is easy to prepare and sets in a few minutes.</h2>
+        </div>
+        <div class="rules">
+            <h3>Rules:</h3>
+            <ol>
+             <li>Theme of event – castlemaking.</li>
+                    <li>A team should consist of 4 members.</li>
+                    <li>Only 1 team is allowed from eachgroup.</li>
+                    <li>Participants shall be provided with-plaster of Parispowder, water, mixing container, spoon, gloves and newspaper.</li>
+                    <li>Participants are required to bring their ownpaints.</li>
+                    <li>Time allotted to each team is 2 hours.</li>
+                    <li>Points will be allotted according to yourcreation.</li>
+                    
+            </ol>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,634 @@
+/*
+Theme Name: WordPress Default
+Theme URI: http://wordpress.org/
+Description: The default WordPress theme based on the famous <a href="http://binarybonsai.com/kubrick/">Kubrick</a>.
+Version: 1.6
+Author: Michael Heilemann
+Author URI: http://binarybonsai.com/
+Tags: blue, custom header, fixed width, two columns, widgets
+
+	Kubrick v1.5
+	 http://binarybonsai.com/kubrick/
+
+	This theme was designed and built by Michael Heilemann,
+	whose blog you will find at http://binarybonsai.com/
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+
+
+/* *************************** 
+  Site - Creature tales
+  ---------------------------
+  StyleSheet Index
+  $1 - Global Styles
+  $2 - Website Structure Styles
+  $3 - Header Styles
+  $4 - Content Styles
+  $5 - Sidebar Styles
+  $6 - Footer Styles
+   ***************************/
+
+/* *************************** 
+   $1 GLOBAL Styles
+   ***************************/
+* {
+	margin:0px;
+	padding:0px;
+}
+a {
+	color:#202536;
+	text-decoration:none;
+}
+a:hover {
+	color:#202536;
+	text-decoration:underline;
+}
+img {
+	border:0;
+}
+fieldset {
+	border:none;
+}
+ul li {
+	list-style:none;
+}
+/* *************************** 
+   $2 Website Structure Styles
+   ***************************/
+   
+body {
+	font-size:14px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight:700;
+	/*font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+	color:#202536;
+	background:url(/static/events/Craft/images/bg_body.png) left top repeat;
+	line-height:21px;
+	padding-top:10px;
+	padding:0 5px 0 0px;
+
+}
+#container{
+	background:url(/static/events/Craft/images/bg_container-new.jpg) left top no-repeat;
+	width:940px;
+	overflow:hidden;
+}
+/* *************************** 
+   $3 Header Styles
+   ***************************/
+#header{
+	width:100%;
+	position:relative;
+	height:165px;
+}
+
+#header h1{
+	width:144px;
+	height:118px;
+	position:absolute;
+	left:27px;
+	top:19px;
+}
+#header h1 a{
+	width:144px;
+	height:118px;
+	text-indent:-999999px;
+	outline-style:none;
+	display:block;
+	background:url(/static/events/Craft/images/logo2.png) left top no-repeat;
+	cursor:pointer;
+}
+#header h1 a:hover{background:url(/static/events/Craft/images/logo2.png) left bottom no-repeat;}
+#header #nav_about{
+	width:56px;
+	height:56px;
+	position:absolute;
+	left:240px;
+	top:40px;
+}
+#header #nav_about a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:56px;
+	height:56px;
+	background:url(/static/events/Craft/images/nav_about.png) left top no-repeat;
+}
+#header #nav_about a:hover{background:url(/static/events/Craft/images/nav_about.png) left bottom no-repeat;}
+#header .selected#nav_about a{background:url(/static/events/Craft/images/nav_about.png) left bottom no-repeat;}
+
+#header #nav_collaborators{
+	width:98px;
+	height:98px;
+	position:absolute;
+	left:325px;
+	top:18px;
+}
+#header #nav_collaborators a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:98px;
+	height:98px;
+	background:url(/static/events/Craft/images/nav_collaborators.png) left top no-repeat;
+}
+#header #nav_collaborators a:hover{background:url(/static/events/Craft/images/nav_collaborators.png) left bottom no-repeat;}
+#header .selected#nav_collaborators a{background:url(/static/events/Craft/images/nav_collaborators.png) left bottom no-repeat;}
+
+#header #nav_projects{
+	width:74px;
+	height:74px;
+	position:absolute;
+	left:440px;
+	top:33px;
+}
+#header #nav_projects a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:74px;
+	height:74px;
+	background:url(/static/events/Craft/images/nav_projects2.png) left top no-repeat;
+}
+#header #nav_projects a:hover{background:url(/static/events/Craft/images/nav_projects2.png) left bottom no-repeat;}
+#header .selected#nav_projects a{background:url(/static/events/Craft/images/nav_projects2.png) left bottom no-repeat;}
+
+#header #nav_entertainment_arts{
+	width:104px;
+	height:104px;
+	position:absolute;
+	left:538px;
+	top:16px;
+}
+#header #nav_entertainment_arts a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:104px;
+	height:104px;
+	background:url(/static/events/Craft/images/nav_entertainment_arts2.png) left top no-repeat;
+}
+#header #nav_entertainment_arts a:hover{background:url(/static/events/Craft/images/nav_entertainment_arts2.png) left bottom no-repeat;}
+#header .selected#nav_entertainment_arts a{background:url(/static/events/Craft/images/nav_entertainment_arts2.png) left bottom no-repeat;}
+
+#header #nav_tourism_arts{
+	width:78px;
+	height:78px;
+	position:absolute;
+	left:668px;
+	top:27px;
+}
+#header #nav_tourism_arts a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:78px;
+	height:78px;
+	background:url(/static/events/Craft/images/nav_tourism_arts2.png) left top no-repeat;
+}
+#header #nav_tourism_arts a:hover{background:url(/static/events/Craft/images/nav_tourism_arts2.png) left bottom no-repeat;}
+#header .selected#nav_tourism_arts a{background:url(/static/events/Craft/images/nav_tourism_arts2.png) left bottom no-repeat;}
+
+#header #nav_community_arts{
+	width:79px;
+	height:79px;
+	position:absolute;
+	left:767px;
+	top:27px;
+}
+#header #nav_community_arts a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:79px;
+	height:79px;
+	background:url(/static/events/Craft/images/nav_community_arts.png) left top no-repeat;
+}
+#header #nav_community_arts a:hover{background:url(/static/events/Craft/images/nav_community_arts.png) left bottom no-repeat;}
+#header .selected#nav_community_arts a{background:url(/static/events/Craft/images/nav_community_arts.png) left bottom no-repeat;}
+
+#header #nav_contact{
+	width:70px;
+	height:69px;
+	position:absolute;
+	left:864px;
+	top:29px;
+}
+#header #nav_contact a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:70px;
+	height:69px;
+	background:url(/static/events/Craft/images/nav_contact.png) left top no-repeat;
+}
+#header #nav_contact a:hover{background:url(/static/events/Craft/images/nav_contact.png) left bottom no-repeat;}
+#header .selected#nav_contact a{background:url(/static/events/Craft/images/nav_contact.png) left bottom no-repeat;}
+/* *************************** 
+   $4 Content Styles
+   ***************************/
+#content{
+	width:100%;
+	overflow:hidden;
+}
+#home{
+	width:960px;
+	height:673px;
+	margin:0px auto;
+	background:url(/static/events/Craft/images/bg_home.jpg) center top no-repeat;
+	height:673px;
+	position:relative;
+}
+#home h1{
+	width:144px;
+	height:141px;
+	position:absolute;
+	left:223px;
+	top:34px;
+}
+#home h1 a{
+	width:144px;
+	height:141px;
+	text-indent:-999999px;
+	outline-style:none;
+	display:block;
+	background:url(/static/events/Craft/images/logo.png) left top no-repeat;
+	cursor:pointer;
+}
+#home h1 a:hover{background:url(/static/events/Craft/images/logo.png) left bottom no-repeat;}
+#home #nav_contact{
+	width:90px;
+	height:90px;
+	position:absolute;
+	left:66px;
+	top:405px;
+}
+#home #nav_contact a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:90px;
+	height:90px;
+	background:url(/static/events/Craft/images/nav_contact.png) left top no-repeat;
+}
+#home #nav_contact a:hover{background:url(/static/events/Craft/images/nav_contact.png) left bottom no-repeat;}
+#home .selected#nav_contact a{background:url(/static/events/Craft/images/nav_contact.png) left bottom no-repeat;}
+
+#home #nav_collaborators{
+	width:124px;
+	height:124px;
+	position:absolute;
+	left:32px;
+	top:243px;
+}
+#home #nav_collaborators a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:124px;
+	height:124px;
+	background:url(/static/events/Craft/images/nav_collaborators.png) left top no-repeat;
+}
+#home #nav_collaborators a:hover{background:url(/static/events/Craft/images/nav_collaborators.png) left bottom no-repeat;}
+#home .selected#nav_collaborators a{background:url(/static/events/Craft/images/nav_collaborators.png) left bottom no-repeat;}
+
+#home #nav_about{
+	width:67x;
+	height:67px;
+	position:absolute;
+	left:122px;
+	top:145px;
+}
+#home #nav_about a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:67px;
+	height:67px;
+	background:url(/static/events/Craft/images/nav_about.png) left top no-repeat;
+}
+#home #nav_about a:hover{background:url(/static/events/Craft/images/nav_about.png) left bottom no-repeat;}
+#home .selected#nav_about a{background:url(/static/events/Craft/images/nav_about.png) left bottom no-repeat;}
+
+#home #nav_projects{
+	width:84px;
+	height:84px;
+	position:absolute;
+	right:258px;
+	top:90px;
+}
+#home #nav_projects a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:84px;
+	height:84px;
+	background:url(/static/events/Craft/images/nav_projects.png) left top no-repeat;
+}
+#home #nav_projects a:hover{background:url(/static/events/Craft/images/nav_projects.png) left bottom no-repeat;}
+#home .selected#nav_projects a{background:url(/static/events/Craft/images/nav_projects.png) left bottom no-repeat;}
+
+#home #nav_entertainment_arts{
+	width:61px;
+	height:61px;
+	position:absolute;
+	right:112px;
+	top:141px;
+}
+#home #nav_entertainment_arts a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:61px;
+	height:61px;
+	background:url(/static/events/Craft/images/nav_entertainment_arts.png) left top no-repeat;
+}
+#home #nav_entertainment_arts a:hover{background:url(/static/events/Craft/images/nav_entertainment_arts.png) left bottom no-repeat;}
+#home .selected#nav_entertainment_arts a{background:url(/static/events/Craft/images/nav_entertainment_arts.png) left bottom no-repeat;}
+
+#home #nav_tourism_arts{
+	width:82px;
+	height:82px;
+	position:absolute;
+	right:87px;
+	top:271px;
+}
+#home #nav_tourism_arts a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:82px;
+	height:82px;
+	background:url(/static/events/Craft/images/nav_tourism_arts.png) left top no-repeat;
+}
+#home #nav_tourism_arts a:hover{background:url(/static/events/Craft/images/nav_tourism_arts.png) left bottom no-repeat;}
+#home .selected#nav_tourism_arts a{background:url(/static/events/Craft/images/nav_tourism_arts.png) left bottom no-repeat;}
+
+#home #nav_community_arts{
+	width:69px;
+	height:69px;
+	position:absolute;
+	right:95px;
+	top:408px;
+}
+#home #nav_community_arts a{
+	text-indent:-9999999px;
+	outline-style:none;
+	display:block;
+	width:69px;
+	height:69px;
+	background:url(/static/events/Craft/images/nav_community_arts.png) left top no-repeat;
+}
+#home #nav_community_arts a:hover{background:url(/static/events/Craft/images/nav_community_arts.png) left bottom no-repeat;}
+#home .selected#nav_community_arts a{background:url(/static/events/Craft/images/nav_community_arts.png) left bottom no-repeat;}
+.maincontent{
+	width:605px;
+	float:left;
+	padding-top:25px;
+}
+
+
+.maincontent h1{
+	font-size:30px;
+	color:#FFF;
+	line-height:30px;
+	margin-bottom:20px;
+}
+pre{font-family: 'Quicksand', sans-serif;font-weight:700;}
+.maincontent h3{
+	font-family: 'Quicksand', sans-serif;font-weight:700;
+	padding:32px 0 0 10px;
+	font-size:16px;
+	color:#333;
+	line-height:20px;
+	text-transform:uppercase;
+}
+
+.maincontent h1 span{
+	padding:7px 15px;
+	background:#b34542;
+	text-transform:uppercase;
+}
+.maincontent p {
+	line-height:21px;
+	padding-top:10px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight:700;
+	padding:0 5px 0 10px;
+	margin-bottom: 13px;
+}
+
+.maincontent ul li {text-transform: uppercase; font-size: 13px; margin: 2px 0 3px 30px; border-bottom: 1px dotted #fff;list-style-type: circle;}
+
+.maincontent p span{
+	background:#FFF;
+}
+.maincontent .img_box{
+	background:#FFF;
+	padding:8px 0px;
+	margin-top:20px;
+}
+
+.maincontent a {    color: #b34542;
+    text-decoration: none;}
+    
+    .maincontent h2 {color: #b34542; font size: 18px; margin: 14px 0; text-transform: uppercase;}
+.maincontent .img_box img{
+	display:block;
+	margin:0px auto;
+}
+/* *************************** 
+   $5 Sidebar Styles
+   ***************************/
+
+.sidebar{
+	width:180px;
+	float:left;
+	padding:25px 0px 0px 35px;
+}
+.sidebar h3{
+	font-size:18px;
+	color:#FFF;
+	line-height:19px;
+}
+.sidebar h3 span{
+	padding:0px 6px 3px 6px;
+	background:#7ab1eb;
+	text-transform:uppercase;
+}
+.sidebar ul{
+	padding-top:26px;
+}
+.sidebar ul li ul{
+	padding:5px 0 0 5px;
+}
+.sidebar ul li ul a{
+	background:none;
+	color:#923619;
+}
+.sidebar ul li{
+	background:url(/static/events/Craft/images/bg_sidebar_li.png) left top repeat-x;
+	padding:6px 0px;
+}
+.sidebar ul li.first{ background:none;}
+.sidebar ul li a{
+	display:block;
+	padding-left:14px;
+	background:url(/static/events/Craft/images/bg_sidebar_li_a.png) left 6px no-repeat;
+	font-size:11px;
+	color:#272525;
+	line-height:19px;
+}
+.sidebar ul li a:hover{color:#272525;}
+.sidebar_left{
+	width:285px;
+	float:left;
+}
+.sidebar_left img{ display:block;}
+/* *************************** 
+   $6 Footer Styles
+   ***************************/
+#footer{
+	background:url(/static/events/Craft/images/bg_footer.png) left top repeat-x;
+	margin-top:20px;
+	padding-top:26px;
+	padding-bottom:10px;
+	position:relative;
+}
+#footer p{
+	font-size:12px;
+	color:#4b4b4b;
+	padding:0px;
+	background:none;
+	margin:0px;
+	line-height:normal;
+}
+#footer span{
+	font-size:12px;
+	color:#4b4b4b;
+	float:right;
+}
+#footer span a{color:#4b4b4b;}
+#footer span a:hover{color:#4b4b4b;}
+.home_box{
+	width:59px;
+	height:142px;
+	background:url(/static/events/Craft/new/images/bg_home_box.png) left bottom no-repeat;
+	position:absolute;
+	right:-104px;
+	top:-142px;
+	padding-left:45px;
+}
+.home_box a{
+	display:block;
+	width:59px;
+	height:59px;
+	text-indent:-999999px;
+	outline-style:none;
+	background:url(/static/events/Craft/new/images/home_link.png) left top no-repeat;
+}
+.home_box a:hover{background:url(/static/events/Craft/new/images/home_link.png) left bottom no-repeat;}
+
+/* Top Navigation */
+
+	ul#nav			{background:url(/static/events/Craft/new/images/topnav.jpg); width:980px;}
+	ul#nav li		{float:left; list-style-type:none }
+	ul#nav li a 	{height:120px; display:block; top:0; text-indent:-9999px; outline:none }
+	
+	li#navAbout a, li#navCollaboration a, li#navProjects a, li#navArt a, li#navTourism a, li#navCommunity a, li#navContact a { background:url(/static/events/Craft/new/images/topnav.jpg);}
+		
+	li#navAbout a 												{ background-position:0 0; width:80px; left:0px }
+	li#navAbout a:hover											{ background-position:0 -120px }
+	body#pageAbout li#navAbout a								{ background-position:0 -120px }
+	
+	li#navCollaboration a 										{ background-position:-80px 0; width:130px; left:80px }
+	li#navCollaboration a:hover									{ background-position:-80px -120px }
+	body#pageCollaboration li#navCollaboration a				{ background-position:-80px -120px }
+	
+	li#navProjects a 											{ background-position:-210px 0; width:95px; left:210px }
+	li#navProjects a:hover										{ background-position:-210px -120px }
+	body#pageProjects li#navProjects a							{ background-position:-210px -120px }
+	
+	li#navArt a 												{ background-position:-305px 0; width:85px; left:305px }
+	li#navArt a:hover											{ background-position:-305px -120px }
+	body#pageArt li#navArt a 									{ background-position:-305px -120px }
+	
+	li#navTourism a 											{ background-position:-390px 0; width:105px; left:390px }
+	li#navTourism a:hover										{ background-position:-390px -120px }
+	body#pageTourism li#navTourism a 							{ background-position:-390px -120px }
+	
+	li#navCommunity a 											{ background-position:-495px 0; width:100px; left:495px }
+	li#navCommunity a:hover										{ background-position:-495px -120px }
+	body#pageCommunity li#navCommunity a 						{ background-position:-495px -120px }
+	
+	li#navContact a 											{ background-position:-596px 0; width:87px; left:600px }
+	li#navContact a:hover										{ background-position:-596px -120px }
+	body#pageContact li#navContact a 							{ background-position:-596px -120px }
+
+#topnavigation {margin-left:220px;}
+
+.maincontent.blogcontent{width:605px;}
+.maincontent.blogcontent #footer{background:url(/static/events/Craft/new/images/bg_footer.png) left top repeat-x;}
+
+.blogcontent .blog_list .post_box{padding-bottom:40px;background:url(/static/events/Craft/new/images/bg_blog.png) center bottom no-repeat;margin-bottom:25px;}
+.blogcontent .blog_title{overflow:hidden;margin-bottom:20px;}
+.blog_date{width:75px;height:75px;float:left;background:url(/static/events/Craft/new/images/bg_date.png) no-repeat;margin-right:15px;}
+.blog_date span.day{display:block;padding-top:18px;font-size:21px;line-height:21px;color:#000;text-align:center;}
+.blog_date span.month{display:block;padding-top:3px;font-size:14px;color:#ee4738;line-height:14px;text-align:center;text-transform:uppercase;}
+
+.blogcontent .blog_title h2{font-size:22px;line-height:24px;color:#47506a;text-transform:uppercase;margin-top:20px;}
+.blogcontent .blog_title h2 a{color:#47506a;}
+
+
+.maincontent h1{margin-bottom:40px;}
+.maincontent.blogcontent p{background:none;font-size:14px;margin:0;margin-bottom:20px;padding:0;}
+.maincontent.blogcontent h3{color:#b34542;padding:0;font-size:17px;margin-bottom:20px;}
+
+.blog_content img{max-width:590px;border:8px solid #fff !important;height:auto;}
+.maincontent.blogcontent .gallery img{border:8px solid #fff !important;}
+.pager .wp-pagenavi .pages{display:none;}
+.pager .wp-pagenavi{text-align:center;}
+.pager .wp-pagenavi span,.pager .wp-pagenavi a{line-height:14px;float:none;display:inline-block;*display:inline;border:0;width:34px;height:24px;background:url(/static/events/Craft/images/bg_pager.png) 0 0 no-repeat;margin:0;padding:0;margin:0 3px;padding-top:10px;}
+.pager .wp-pagenavi a:hover{border:0;}
+.pager .wp-pagenavi span.current{border:0;padding:0;margin:0;background:url(/static/events/Craft/images/bg_pager.png) 0 -34px no-repeat;margin:0 3px;padding-top:10px;font-size:14px;color:#fff;}
+.pager .wp-pagenavi a.nextpostslink{background:url(/static/events/Craft/images/icon_pager.png) 0 0 no-repeat;text-indent:-9999px;text-align:left;color:#ee4738;font-size:14px;}
+.pager .wp-pagenavi a.previouspostslink{background:url(/static/events/Craft/images/icon_pager.png) 0 -34px no-repeat;text-indent:-9999px;text-align:left;}
+.cat_ul{padding:0;margin:0;overflow:hidden;}
+.cat_ul li{float:left;list-style:none;padding:0;margin:0;margin-right:10px;margin-bottom:10px;}
+.cat_ul li a{display:block;padding:10px;color:#4c78af;font-size:14px;line-height:14px;background:#fff;}
+
+#respond textarea{background:#fff;width:585px;border:0;padding:10px;font-size:15px;color:#a9852d;line-height:20px;font-family: 'Quicksand', sans-serif;font-weight:700;}
+
+.maincontent.blogcontent #commentform p{display:block;}
+.maincontent.blogcontent #commentform p input{width:585px;height:16px;padding:8px 10px;background:#fff;border:0;font-size:15px;color:#a9852d;font-family: 'Quicksand', sans-serif;font-weight:700;}
+.maincontent.blogcontent #commentform p label{display:block;padding:10px;font-size:17px;color:#000;font-family: 'Quicksand', sans-serif;font-weight:700;}
+.maincontent.blogcontent #commentform p.name_filed{display:block;float:left;width:295px;margin-bottom:20px;margin-right:15px;}
+.maincontent.blogcontent #commentform p.mail_filed{display:block;float:left;width:295px;}
+.maincontent.blogcontent #commentform p.name_filed input{width:275px;}
+.maincontent.blogcontent #commentform p.mail_filed input{width:275px;}
+.maincontent.blogcontent #respond #commentform p  #submit{width:auto;height:auto;background:#516089;border:0;color:#fff;font-size:18px;line-height:18px;text-transform:uppercase;padding:8px 15px;cursor:pointer;font-family: 'Quicksand', sans-serif;font-weight:700;}
+
+.commentlist li{list-style:none;margin-bottom:30px;}
+.commentlist li .avatar{display:none;}
+.commentlist li .fn{font-style:normal;font-size:17px;color:#000;}
+.commentlist li .says{display:none;}
+.commentlist li .comment-meta a{color:#637394;font-size:14px;}
+.commentlist li .comment-body{overflow:hidden;}
+.commentlist li .comment-author{float:left;margin-bottom:10px;}
+.commentlist li .comment-meta{float:right;margin-bottom:10px;}
+.maincontent.blogcontent  .commentlist li p{clear:both;display:block;padding-top:10px;border-top:2px solid #fff;font-size:14px;color:#000;}
+.comment-awaiting-moderation{display:none;}
+
+#nav #navCommunity.active a{background-position: -495px -120px;}
+#nav #navProjects.active a{background-position: -210px -120px;}
+#nav #navArt.active a{background-position: -305px -120px;}
+#nav #navTourism.active a{background-position: -390px -120px;}
+
+.maincontent .gallery img{border:8px solid #fff !important;}
+
+/******************20150129***************************/
+.maincontent ul.photo_list li{list-style-type:none; margin-left:20px;}

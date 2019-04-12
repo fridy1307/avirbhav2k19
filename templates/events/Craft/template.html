@@ -1,0 +1,73 @@
+{% extends 'base2.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/static/events/Craft/new/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" media="all" href="/static/events/Craft/new/mwb.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="/static/events/Craft/new/colorbox.css" />
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <script src="/static/events/Craft/new/js/jquery.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="/static/events/Craft/new/js/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="/static/events/Craft/new/js/jquery.colorbox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".gallery").each(function(i) {
+                $(this).find("a").addClass("group" + i);
+                $("a.group" + i).colorbox({
+                    rel: "group" + i
+                });
+            });
+        });
+    </script>
+    <!--[if lte IE 6]>
+<style type="text/css" media="all">@import "http://creaturetales.com.au/wp-content/themes/Creature-Tales/css/ie6.css";</style>
+<![endif]-->
+
+
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-pagenavi-css' href='/static/events/Craft/new/css/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+{% endblock %}
+{% block body %}
+<body class="page page-id-1271 page-template-default">
+
+    <div id="container">
+        <div id="header">
+            <h1><a href="{% url 'craft' %}">Craft Valley</a></h1>
+            <div id="topnavigation">
+                <ul id="nav">
+                    <li id="navAbout"><a href="{% url 'castle' %}">Castle Ward</a></li>
+                    <li id="navCollaboration"><a href="{% url 'faced' %}">Many Faced Gods</a></li>
+                    <li id="navProjects"><a href="{% url 'feast' %}">Feast for Crows</a></li>
+                    <li id="navArt"><a href="{% url 'rebirth' %}">The Rebirth</a></li>
+                    <li id="navTourism"><a href="{% url 'dcrossing' %}">Double Crossing</a></li>
+                    <li id="navCommunity"><a href="{% url 'raven' %}">Raven</a></li>
+                    <li id="navContact"><a href="{% url 'vanity' %}">Vanity Fair</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div class="sidebar_left"><img src="http://creaturetales.com.au/wp-content/themes/Creature-Tales/images/content_img4.jpg" alt="" /></div>
+            <div class="maincontent">
+ {% block content %}
+
+ {% endblock %}
+
+            </div>
+
+        </div>
+    </div>
+
+    {% endblock %}

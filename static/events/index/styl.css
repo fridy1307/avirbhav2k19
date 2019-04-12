@@ -1,0 +1,806 @@
+@font-face {
+    font-family: 'AlternateGothicNo2AT';
+    src: url('fonty/gothic.eot');
+    src: url('fonty/gothic.eot?#iefix') format('embedded-opentype'), url('fonty/gothic.woff') format('woff'), url('fonty/gothic.ttf') format('truetype'), url('fonty/gothic.svg#AlternateGothicNo2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    background: #fff url("pix/bg.gif") repeat-x top;
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", "Geneva CE", lucida, sans-serif;
+    font-size: 13px;
+    position: relative;
+    color: #131313;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#bg_ilustrace {
+    width: 100%;
+    height: 886px;
+    position: absolute;
+    top: 0px;
+    background: url("pix/bg_ilustrace.jpg") no-repeat center;
+}
+
+img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #0096bb;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0096bb;
+    text-decoration: underline;
+}
+
+#hlavni {
+    width: 960px;
+    min-height: 100%;
+    margin: auto;
+    position: relative;
+    text-align: left;
+    background: url("pix/bg_ilustrace.jpg") no-repeat top center;
+    z-index: 2;
+}
+
+#pozadi_spodni {
+    width: 960px;
+    margin: auto;
+    position: relative;
+    text-align: left;
+    background: url(pix/pata.png) bottom left no-repeat transparent;
+    z-index: 2;
+}
+
+#logo {
+    width: 287px;
+    height: 46px;
+    background-image: url(pix/logo.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    z-index: 5;
+}
+
+#logo a {
+    display: block;
+    height: 46px;
+    width: 287px;
+    margin: 0px 0px 0px 0px;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.clear,
+br.clear {
+    clear: both;
+}
+
+.galerieclear {
+    clear: both;
+    height: 10px;
+}
+
+/* menu */
+
+#menu {
+    position: absolute;
+    top: 152px;
+    left: 0px;
+    margin: 0px 0px 0px 0px;
+    width: auto;
+    z-index: 5;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    float: left;
+    text-decoration: none;
+    color: #191919;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 7px 0px 7px 0px;
+    text-transform: uppercase;
+    font-family: 'AlternateGothicNo2AT', Impact, Haettenschweiler, 'Arial Narrow Bold', Gadget, sans-serif;
+    margin: 0px 22px 0px 0px;
+}
+
+#menu ul li a:hover {
+    color: #000;
+    background-color: transparent;
+    background-image: url(pix/menu.gif);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+/* obsah */
+
+h1 {
+    color: #4f26a3;
+    font-size: 32px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 30px 0px;
+    font-family: 'AlternateGothicNo2AT', Impact, Haettenschweiler, 'Arial Narrow Bold', Gadget, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1;
+}
+
+h2 {
+    color: #cd0c65;
+    font-size: 22px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 15px 0px;
+    font-family: 'AlternateGothicNo2AT', Impact, Haettenschweiler, 'Arial Narrow Bold', Gadget, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1;
+}
+
+h2 .nadpisdatum {
+    color: #2ca243;
+    font-size: 18px;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 0px 15px 10px;
+    border-bottom: 1px solid #96ca26;
+    border-top: 1px solid #96ca26;
+    font-family: 'AlternateGothicNo2AT', Impact, Haettenschweiler, 'Arial Narrow Bold', Gadget, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+#obsah {
+    width: 510px;
+    position: relative;
+    margin: 215px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    color: #231f20;
+    line-height: 160%;
+    font-family: "Trebuchet MS", "Geneva CE", lucida, sans-serif;
+}
+
+#uvodni_obsah {
+    width: 530px;
+    height: 480px;
+    position: relative;
+    margin: 215px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    color: #231f20;
+    line-height: 160%;
+    font-family: "Trebuchet MS", "Geneva CE", lucida, sans-serif;
+    background: url(pix/index.png) 0px 50px no-repeat transparent;
+}
+
+#uvodni_obsah h1 {
+    position: absolute;
+    top: 52px;
+    left: 280px;
+    font-size: 48px;
+    color: #ef315e;
+}
+
+#uvodni_obsah #bloktext {
+    padding: 102px 0px 0px 280px;
+}
+
+#uvodni_obsah .zvyrazneni {
+    color: #4f26a3;
+    font-size: 17px;
+    font-family: Cambria, Georgia, 'New York CE', utopia, serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#uvodni_obsah #bloktext_druhy {
+    padding: 0px;
+    position: absolute;
+    top: 320px;
+    left: 345px;
+    width: 195px;
+}
+
+.ukazky_tvorby {
+    width: 130px;
+    height: 150px;
+    line-height: 150px;
+    position: absolute;
+    top: 279px;
+    left: 195px;
+}
+
+.ukazky_tvorby a {
+    color: #333;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 5;
+    text-decoration: none;
+    text-indent: -9999px;
+    background: url(pix/ukazky_tvorby.png) 0px 0px no-repeat transparent;
+}
+
+.ukazky_tvorby a:hover {
+    background-position: -130px 0px;
+}
+
+#obsah_sirsi {
+    width: 550px;
+    position: relative;
+    margin: 215px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    color: #231f20;
+    line-height: 160%;
+    font-family: "Trebuchet MS", "Geneva CE", lucida, sans-serif;
+}
+
+.ilustracniobrazek img {
+    float: right;
+    padding: 0px 0px 0px 0px;
+    margin: 10px 0px 300px 10px;
+    border: none;
+}
+
+.ilustracniobrazeksluzby img {
+    float: right;
+    padding: 0px 0px 0px 0px;
+    margin: -5px 0px 300px 10px;
+    border: none;
+}
+
+.ilustracniobrazekomne img {
+    float: right;
+    padding: 0px 0px 0px 0px;
+    margin: -20px 0px 300px 15px;
+    border: none;
+}
+
+.citace {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.seznam {
+    width: auto;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 20px 0px;
+}
+
+.seznam ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.seznam li {
+    list-style-type: none;
+    background-image: url(pix/seznam.png);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+    line-height: 26px;
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+/* hexagony */
+
+#hexagony {
+    width: 400px;
+    height: 800px;
+    float: right;
+    margin: 107px 0px 0px 0px;
+    padding: 1px 0px 0px 0px;
+    position: relative;
+    background: url(pix/hexagony.png) 0px 0px no-repeat transparent;
+    font-family: 'AlternateGothicNo2AT', Impact, Haettenschweiler, 'Arial Narrow Bold', Gadget, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hexagon_handpainting,
+.hexagon_bodypainting,
+.hexagon_facepainting,
+.hexagon_uv_bodypainting,
+.hexagon_wallpainting,
+.hexagon_airbrush,
+.hexagon_airbrush_tattoo,
+.hexagon_temporary_tattoo,
+.hexagon_glitter_tattoo,
+.hexagon_special_effect_fx,
+.hexagon_movie_blood {
+    width: 100px;
+    height: 116px;
+    line-height: 116px;
+    position: absolute;
+    text-align: center;
+}
+
+.hexagon_handpainting {
+    top: 0px;
+    left: 250px;
+}
+
+.hexagon_bodypainting {
+    top: 172px;
+    left: 150px;
+}
+
+.hexagon_facepainting {
+    top: 172px;
+    left: 50px;
+}
+
+.hexagon_uv_bodypainting {
+    top: 86px;
+    left: 200px;
+}
+
+.hexagon_wallpainting {
+    top: 258px;
+    left: 0px;
+}
+
+.hexagon_airbrush {
+    top: 344px;
+    left: 150px;
+}
+
+.hexagon_airbrush_tattoo {
+    top: 430px;
+    left: 200px;
+}
+
+.hexagon_temporary_tattoo {
+    top: 258px;
+    left: 200px;
+}
+
+.hexagon_glitter_tattoo {
+    top: 258px;
+    left: 300px;
+}
+
+.hexagon_special_effect_fx {
+    top: 344px;
+    left: 50px;
+}
+
+.hexagon_movie_blood {
+    top: 430px;
+    left: 0px;
+}
+
+.hexagon_handpainting span,
+.hexagon_bodypainting span,
+.hexagon_facepainting span,
+.hexagon_uv_bodypainting span,
+.hexagon_wallpainting span,
+.hexagon_airbrush span,
+.hexagon_airbrush_tattoo span,
+.hexagon_temporary_tattoo span,
+.hexagon_glitter_tattoo span,
+.hexagon_special_effect_fx span,
+.hexagon_movie_blood span {
+    display: -moz-inline-box;
+    /* FF2 or lower */
+    display: inline-block;
+    /* FF3, Opera, Safari */
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.hexagon_handpainting span,
+.hexagon_bodypainting span,
+.hexagon_facepainting span,
+.hexagon_uv_bodypainting span,
+.hexagon_wallpainting span,
+.hexagon_airbrush span,
+.hexagon_airbrush_tattoo span,
+.hexagon_temporary_tattoo span,
+.hexagon_glitter_tattoo span,
+.hexagon_special_effect_fx span,
+.hexagon_movie_blood span {
+    *display: inline;
+}
+
+/* haslayout for IE6/7 */
+
+.hexagon_handpainting a,
+.hexagon_bodypainting a,
+.hexagon_facepainting a,
+.hexagon_uv_bodypainting a,
+.hexagon_wallpainting a,
+.hexagon_airbrush a,
+.hexagon_airbrush_tattoo a,
+.hexagon_temporary_tattoo a,
+.hexagon_glitter_tattoo a,
+.hexagon_special_effect_fx a,
+.hexagon_movie_blood a {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 5;
+    text-decoration: none;
+    background: url(pix/hexagony_.png) no-repeat transparent;
+}
+
+.hexagon_handpainting a {
+    background-position: -100px 0px;
+}
+
+.hexagon_bodypainting a {
+    background-position: -500px 0px;
+}
+
+.hexagon_facepainting a {
+    background-position: -600px 0px;
+}
+
+.hexagon_uv_bodypainting a {
+    background-position: 0px 0px;
+}
+
+.hexagon_wallpainting a {
+    background-position: -700px 0px;
+}
+
+.hexagon_airbrush a {
+    background-position: -900px 0px;
+}
+
+.hexagon_airbrush_tattoo a {
+    background-position: -400px 0px;
+}
+
+.hexagon_temporary_tattoo a {
+    background-position: -300px 0px;
+}
+
+.hexagon_glitter_tattoo a {
+    background-position: -200px 0px;
+}
+
+.hexagon_special_effect_fx a {
+    background-position: -800px 0px;
+}
+
+.hexagon_movie_blood a {
+    background-position: -1000px 0px;
+}
+
+.hexagon_handpainting a:hover,
+.hexagon_bodypainting a:hover,
+.hexagon_facepainting a:hover,
+.hexagon_uv_bodypainting a:hover,
+.hexagon_wallpainting a:hover,
+.hexagon_airbrush a:hover,
+.hexagon_airbrush_tattoo a:hover,
+.hexagon_temporary_tattoo a:hover,
+.hexagon_glitter_tattoo a:hover,
+.hexagon_special_effect_fx a:hover,
+.hexagon_movie_blood a:hover {
+    width: 120px;
+    height: 140px;
+    line-height: 140px;
+    margin: -10px 0px 0px -10px;
+    background: url(pix/hexagony_hover.png) no-repeat transparent;
+    z-index: 10;
+}
+
+.hexagon_handpainting a:hover {
+    background-position: -120px 0px;
+}
+
+.hexagon_bodypainting a:hover {
+    background-position: -600px 0px;
+}
+
+.hexagon_facepainting a:hover {
+    background-position: -720px 0px;
+}
+
+.hexagon_uv_bodypainting a:hover {
+    background-position: 0px 0px;
+}
+
+.hexagon_wallpainting a:hover {
+    background-position: -840px 0px;
+}
+
+.hexagon_airbrush a:hover {
+    background-position: -1080px 0px;
+}
+
+.hexagon_airbrush_tattoo a:hover {
+    background-position: -480px 0px;
+}
+
+.hexagon_temporary_tattoo a:hover {
+    background-position: -360px 0px;
+}
+
+.hexagon_glitter_tattoo a:hover {
+    background-position: -240px 0px;
+}
+
+.hexagon_special_effect_fx a:hover {
+    background-position: -960px 0px;
+}
+
+.hexagon_movie_blood a:hover {
+    background-position: -1200px 0px;
+}
+
+.hexagon_handpainting a:hover span,
+.hexagon_bodypainting a:hover span,
+.hexagon_facepainting a:hover span,
+.hexagon_uv_bodypainting a:hover span,
+.hexagon_wallpainting a:hover span,
+.hexagon_airbrush a:hover span,
+.hexagon_airbrush_tattoo a:hover span,
+.hexagon_temporary_tattoo a:hover span,
+.hexagon_glitter_tattoo a:hover span,
+.hexagon_special_effect_fx a:hover span,
+.hexagon_movie_blood a:hover span {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+/* kontaktni formular */
+
+.button {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    bottom: -40px;
+    left: 390px;
+    cursor: pointer;
+    cursor: hand;
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 100px;
+    height: 116px;
+    line-height: 116px;
+    background: url(pix/button.png) 0px 0px no-repeat transparent;
+    font-family: 'AlternateGothicNo2AT', Impact, Haettenschweiler, 'Arial Narrow Bold', Gadget, sans-serif;
+    border: none;
+    outline: none;
+    z-index: 10;
+}
+
+.button:hover {
+    background-position: -100px 0px;
+}
+
+.formlevy {
+    float: left;
+    width: 60px;
+    line-height: 1;
+    padding: 10px 0px 0px 0px;
+    font-weight: normal;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'AlternateGothicNo2AT', Impact, Haettenschweiler, 'Arial Narrow Bold', Gadget, sans-serif;
+}
+
+.formpravy {
+    float: left;
+    width: 440px;
+    line-height: 1;
+    padding: 0px 0px 0px 0px;
+}
+
+.error {
+    color: #FF4040;
+    font-weight: bold;
+}
+
+.povinne {
+    color: #FF4040;
+}
+
+.formular input,
+.formular textarea,
+.formular select {
+    border: none;
+    background: url(pix/formular.png) 0px 0px #e6f8ff;
+    font-family: "Trebuchet MS", "Geneva CE", lucida, sans-serif;
+    font-size: 13px;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+    width: 360px;
+    margin: 0px 0px 20px 0px;
+    color: #0096bb;
+}
+
+.formular textarea {
+    height: 150px;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.kontaktemail {
+    line-height: 24px;
+    background: url(pix/kontakty.png) 0px 0px no-repeat transparent;
+    padding: 0px 0px 0px 30px;
+    margin: 0px 0px 5px 0px;
+}
+
+.kontakttelefon {
+    line-height: 24px;
+    background: url(pix/kontakty.png) 0px -36px no-repeat transparent;
+    padding: 0px 0px 0px 30px;
+    margin: 0px 0px 5px 0px;
+}
+
+.kontaktwww {
+    line-height: 24px;
+    background: url(pix/kontakty.png) 0px -72px no-repeat transparent;
+    padding: 0px 0px 0px 30px;
+    margin: 0px 0px 5px 0px;
+}
+
+/* pata webu */
+
+#pata {
+    width: auto;
+    clear: both;
+    height: 126px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+}
+
+.pata_exarion {
+    width: 50px;
+    height: 58px;
+    line-height: 58px;
+    position: absolute;
+    top: 27px;
+    left: 10px;
+}
+
+.pata_email,
+.pata_facebook {
+    width: 60px;
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+}
+
+.pata_email {
+    top: 20px;
+    left: 570px;
+}
+
+.pata_facebook {
+    top: 20px;
+    left: 630px;
+}
+
+.pata_design {
+    width: 200px;
+    position: absolute;
+    top: 46px;
+    left: 68px;
+}
+
+.pata_design a,
+.pata_design a:hover {
+    color: #21b53e;
+    font-weight: bold;
+}
+
+.pata_exarion a {
+    color: #333;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 5;
+    text-decoration: none;
+    text-indent: -9999px;
+    background: url(pix/exarion.png) 0px 0px no-repeat transparent;
+}
+
+.pata_email a,
+.pata_facebook a {
+    color: #333;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 5;
+    text-decoration: none;
+    text-indent: -9999px;
+    background: url(pix/pata_kontakty.png) 0px 0px no-repeat transparent;
+}
+
+.pata_facebook a {
+    background-position: -60px 0px;
+}
+
+.pata_exarion a:hover {
+    background-position: -50px 0px;
+}
+
+.pata_email a:hover {
+    background-position: 0px -70px;
+}
+
+.pata_facebook a:hover {
+    background-position: -60px -70px;
+}
+
+.pata_odkaz_prvni {
+    width: 99px;
+    height: 86px;
+    position: absolute;
+    bottom: 110px;
+    right: 0px;
+}
+
+.pata_odkaz_druhy {
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+}
+
+/* barva vyberu textu */
+
+::selection {
+    background: #5ed0ed;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #5ed0ed;
+    color: #fff;
+}

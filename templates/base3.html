@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AVIRBHAV2k19 | Season 8</title>
+{% block style1 %}
+{% endblock %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block head %}
+{% endblock %}
+<style>
+    body {
+        height: 100%;
+    }
+    .icon-bar {
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+    .left {
+        left:0;
+    }
+    .right {
+        right: 0;
+    }
+
+    .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+
+    .icon-bar a:hover {
+        background-color: #000;
+    }
+
+    .facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .insta {
+        background: #dd4b39;
+        color: white;
+    }
+    .home {
+        background: steelblue;
+        color: aliceblue;
+        position: relative;
+        display: inline-block;
+    }
+
+    .events {
+        background: teal;
+        color: antiquewhite;
+    }
+    .table {
+        background: violet;
+        color: aqua;
+    }
+    .sponsers {
+        background:tomato;
+        color: white;
+    }
+    .text {
+        visibility: hidden;
+        width: 70px;
+        height: 25px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 101;
+    }
+   .home:hover .htext {
+       visibility: visible;
+   }
+   .events:hover .etext {
+       visibility: visible;
+   }
+   .table:hover .ptext {
+       visibility: visible;
+       height: 60px;
+   }
+   .sponsers:hover .stext {
+       visibility: visible;
+       width: 100px;
+   }
+   a > span {
+       transition: none;
+       margin: 0;
+       padding: 0;
+   }
+
+    {% block style %}
+
+{% endblock %}
+</style>
+
+    </head>
+{% block body %}
+<body>
+        {% endblock %}
+
+        <div class="icon-bar left">
+            <a href="{% url 'index' %}" class="home"> <i class="fa fa-home"></i> <span class="text htext">Home</span></a>
+            <a href="{% url 'events' %}" class="events"> <i class="fa fa-th"></i>  <span class="text etext">Events</span> </a>
+            <a href="{% url 'pointstable' %}" class="table"> <i class="fa fa-table"></i>  <span class="text ptext">Points Table</span></a>
+            <a href="{% url 'sponsers' %}" class="sponsers"> <i class="fa fa-users"></i> <span class="text stext">Sponsers</span></a> 
+        </div>
+        <div class="icon-bar right">
+            <a href="https://www.facebook.com/jk.avirbhav/" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/jk_avirbhav" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/avirbhav_2k19/" class="insta"><i class="fa fa-instagram"></i></a>
+        </div>
+    
+    
+
+</body>
+
+</html>

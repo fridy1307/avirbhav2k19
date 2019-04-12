@@ -1,0 +1,431 @@
+{% extends 'base3.html' %}
+
+{% block head %}
+    <script src="/static/events/technical/js/jquery.js"></script>
+    <script src="/static/events/technical/js/plugins.js"></script>
+    <!-- Styles -->
+    <link rel="shortcut icon" href="/static/events/technical/img/favicon.ico" />
+    <link rel="stylesheet" href="/static/events/technical/css/screen.css">
+
+    <!--[if lt IE 9]>
+  <script src="/static/events/technical/js/fallbacks/html5shiv.js"></script>
+  <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="https://mostlyserious.io/cpresources/lib/redactor/redactor.css?d=1535316202" />
+    {% endblock %}
+    
+    {% block style %}
+        .organisers {
+            padding-left: 2%;
+            padding-top: 2%;
+        }
+
+        .organisers h2 {
+            font-size: 2.5rem;
+        }
+
+        .organisers h3 {
+            font-size: 2rem;
+            padding-left: 2.5%
+        }
+
+        .organisers p {
+            font-size: 1.5rem;
+            padding-left: 3.5%
+        }
+
+        .padding-lr-sm {
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+        }
+
+        .padding-lr-md {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+
+        .padding-lr-lg {
+            padding-left: 35px !important;
+            padding-right: 35px !important;
+        }
+
+        ol > li {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #2C2C2C;
+            font-size: 20px;
+            font-weight: 400;
+            margin-left: 40px;
+        }
+
+        section {
+            padding: 2% 5%;
+        }
+
+    {% endblock %}
+
+
+
+{% block body %}
+    <header>
+        <a class="contact" href="#">Get In Touch</a>
+        <span class="hamburger"><span></span></span>
+        <div class="menu">
+            <div class="organisers">
+                <h2>Organisers</h2>
+                <h3>Robotics</h3>
+                <p>Vipin Mahawar : +91-8005989031</p>
+                <p>Sana Anwer : +91-8005989031</p>
+                <h3>Coding:</h3>
+                <p>Anurag Chaudhary : +91-7388650618</p>
+                <p>Vishal Singhal : +91-9935367660</p>
+                <h3>CTF:</h3>
+                <p>Vipin Mahawar : +91-8005989031</p>
+                <h3>Andro-War:</h3>
+                <p>Anurag Chaudhary : +91-7388650618</p>
+                <p>Vipin Mahawar : +91-8005989031</p>
+                <h3>Businext:</h3>
+                <p>Sachin Srivastava : +91-9670868762</p>
+                <p>Vipin Mahawar : +91-8005989031</p>
+                <p>Anurag Chaudhary : +91-7388650618</p>
+                <h3>Quizzical Monsters:</h3>
+                <p>Shivani Sagar : </p>
+
+            </div>
+            <nav>
+                <div class="primary">
+                    <a href="#robotics">Robotics</a>
+                    <a href="">Coding</a>
+                    <a href="">CTF</a>
+                    <a href="">Andro-War</a>
+                    <a href="#businext">Businext</a>
+                    <a href="#quizzical">Quizzical Monsters</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <section class="wide padding-top-sm" id="robotics">
+            <article>
+                <h2 class="text-center">Robotics Events</h2>
+                <div class="grid grid-sm">
+                    <div class="unit-1-3 unit-1-1-md">
+                        <a class="card text-center" href="#r1">
+                            <div class="grid grid-center">
+                                <div class="unit-1-1 unit-1-2-md unit-1-1-sm">
+                                    <p class="text-center margin"><img src="/static/events/technical/uploads/_illustration/groundwork.png" /></p>
+                                </div>
+                            </div>
+                            <h2>The Black Walker</h2>
+                            <p>Black line follower event. <br>Specially for first and second year</p>
+                        </a>
+                    </div>
+                    <div class="unit-1-3 unit-1-1-md">
+                        <a class="card text-center" href="#r2">
+                            <div class="grid grid-center">
+                                <div class="unit-1-1 unit-1-2-md unit-1-1-sm">
+                                    <p class="text-center margin"><img src="/static/events/technical/uploads/_illustration/effective-solutions.png" /></p>
+                                </div>
+                            </div>
+                            <h2>Race of Dragons </h2>
+                            <p>Robo Race.</p>
+                        </a>
+                    </div>
+                    <div class="unit-1-3 unit-1-1-md">
+                        <a class="card text-center" href="#r3">
+                            <div class="grid grid-center">
+                                <div class="unit-1-1 unit-1-2-md unit-1-1-sm">
+                                    <p class="text-center margin"><img src="/static/events/technical/uploads/_illustration/orbit-marketing.png" /></p>
+                                </div>
+                            </div>
+                            <h2>Circuitous woods</h2>
+                            <p>Circuit and PCB designing event.</p>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>s
+        <section class="wide brand padding-bottom-none lift-sm" id="r1">
+            <article>
+                <h2 class="text-center">The Black Walker</h2>
+                <div class="grid grid-center">
+                    <div class="unit-2-5 unit-1-2-md unit-1-1-sm unit-vertical-center margin-sm">
+                        <img src="/static/events/technical/img/black_follower.png" alt="The Black Walker">
+                    </div>
+                    <div class="unit-3-5 unit-1-1-md unit-vertical-center margin-sm">
+                        <blockquote style="text-align: left;border: 0">
+                            <p>Winter is coming!</p>
+                            <p>You are a secret spy beyond the wall, keeping an eye on the white walkers and army of dead. A few days ago you noticed that the army of dead is on the rise.</p>
+                            <p>Your job is to alert people on the wall. You have exhausted all other resources. All that is left is your pet black horse (the black Walker). You need to reach the other side before it’s too late……</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="alt">
+            <h2 class="text-center">
+                Event Description
+            </h2>
+            <blockquote class="small padding-lr-sm">
+                <p>The challenge of the competition is to make a robot that can move on black lines on a white background and reach the finish as soon as possible. The ROBOT which will start on the START tile and reach the FINISH tile block by following the black lines in the shortest time.</p>
+            </blockquote>
+            <div class="padding-lr-md">
+                <h3>Rules:</h3>
+                <ol>
+                    <li>A team of at most 4 and at least 2 is allowed.</li>
+                    <li>Robot should fulfill the given description of size.</li>
+                    <li>Only one team is allowed to run on the track at a time.</li>
+                    <li>Calibration time will be given to each team before start off run.</li>
+                    <li>Event shall be concluded in 2 rounds. First is the qualifier round. Time shall be the judge for you. Round 2 or the final round details shall be disclosed later.</li>
+                    <li>Each team should get ready in given time for run, failing can cause disqualification.</li>
+                    <li>Human interventions are allowed but will lead to deduction of points.</li>
+                    <li>Bots will undergo authenticity check , the participant should not dismantle their bot before completion of any round.</li>
+                    <li>Hard coding will lead to immediate disqualification.</li>
+                    <li>Decision made by Organizer shall be treated as final. </li>
+                </ol>
+                <br>
+                <h3>Arena:</h3>
+                <div class="grid grid-center">
+                    <div class="unit-3-5 unit-1-1-md unit-vertical-center margin-sm">
+                        <blockquote class="small padding-lr-sm">
+                            <p>Black lines of width 3cm on white background. A sample arena has been shown below. The real arena would be disclosed at the time of the competition </p>
+                        </blockquote>
+                    </div>
+                    <div class="unit-2-5 unit-1-2-md unit-1-1-sm unit-vertical-center margin-sm">
+                        <img src="/static/events/technical/img/arena.JPG" alt="Arena Sample">
+                    </div>
+                </div>
+                <h3>Robot Specifications:</h3>
+                <ol>
+                    <li>Each team is allowed to have only one autonomous bot.</li>
+                    <li>The bot must fit into cuboids of __x__x__cm {Length x Breadth x Height}.</li>
+                    <li>The bot should not communicate with any other devices. Data transfer violation will lead to disqualification.</li>
+                </ol>
+            </div>
+        </section>
+
+
+
+
+        <section class="wide brand padding-bottom-none lift-sm" id="r2">
+            <article>
+                <h2 class="text-center">Race of Dragons</h2>
+                <div class="grid grid-center">
+                    <div class="unit-2-5 unit-1-2-md unit-1-1-sm unit-vertical-center margin-sm">
+                        <img src="/static/events/technical/img/robo_race.png" alt="Race of Dragons">
+                    </div>
+                    <div class="unit-3-5 unit-1-1-md unit-vertical-center margin-sm">
+                        <blockquote style="text-align: left;border: 0">
+                            <p>Avirbhav brings you the opportunity to test your efficiency and skills as young and enthusiastic robot designer. Brush up your skills. Prepare yourselves for a race to remember. It’s the time for the dragons to blaze and roar. Gear up your motors, coz it’s time to roll. </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="alt">
+            <h2 class="text-center">
+                Event Description
+            </h2>
+            <blockquote class="small padding-lr-sm">
+                <p>Design a manually controlled ROBOT that has capacity to cover maximum distance in shortest possible time. There shall be two rounds – Qualifier and Finals. Qualifier round is race of 50m. Final round will be a challenging race of 100m.
+                </p>
+                <p>Race your bots till the finish line and earn accolades.</p>
+                <p>Timing - ???</p>
+            </blockquote>
+            <div class="padding-lr-md">
+                <h3>Rules:</h3>
+                <ol>
+                    <li>A team can have at most four members and at least one.</li>
+                    <li>Robot should fulfill the given requirement of size.</li>
+                    <li>Round 1 consist of 50 m straight race. It will be a time-trail round.</li>
+                    <li>In case of a tie, a tie-breaker round shall follow.</li>
+                    <li>Human interventions are allowed with penalty of X sec.</li>
+                    <li>If robot goes off the track, penalty of Y sec will be added to the overall time.</li>
+                    <li>The different teams qualifying for final round shall race for 100m. All qualified teams shall run their bot at same time. The fastest one will be declared winner.</li>
+                    <li>Details of final 100m race shall be disclosed on the spot.</li>
+                    <li>Unethical behavior could lead to disqualification.</li>
+                    <li>Judge’s decision will be considered final. <br>
+                        <span style="font-weight: bolder">NOTE - Rules are liable to be changed.</span></li>
+                </ol>
+                <br>
+                <h3>Robot Specifications:</h3>
+                <ol>
+                    <li>The maximum dimension of the robot can be __ x __ x __ cm (l x b x h).</li>
+                    <li>The robot may be wired or wireless.</li>
+                    <li>The length of the wire (for wired bots) should be long enough to cover the whole track and wire should remain slack during the complete run.</li>
+                    <li>Max weight should be limited by __ kg.</li>
+                    <li>Readymade toys car are not allowed.</li>
+                    <li><b>RC Engines</b> are not allowed</li>
+                </ol>
+            </div>
+        </section>
+
+
+
+        <section class="wide brand padding-bottom-none lift-sm" id="r3">
+            <article>
+                <h2 class="text-center">Circuitous woods</h2>
+                <div class="grid grid-center">
+                    <div class="unit-2-5 unit-1-2-md unit-1-1-sm unit-vertical-center margin-sm">
+                        <img src="/static/events/technical/img/robo_race.png" alt="Race of Dragons">
+                    </div>
+                    <div class="unit-3-5 unit-1-1-md unit-vertical-center margin-sm">
+                        <blockquote style="text-align: left;border: 0">
+                            <p>Hold on your flags to encounter the victory by engaging yourself into the design challenge. It’s time to exhilarate the grey cells and put them for a test </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="alt">
+            <h2 class="text-center">
+                Event Description
+            </h2>
+            <blockquote class="small padding-lr-sm">
+                <p>This event will be conducted in two rounds. First round (eliminative) tests the participant’s basic knowledge in electronics. This is a pen and paper round with multiple choice questions.
+                </p>
+                <p>Round 2 is design challenge round. Qualified teams have to design circuit on PCB based on the lot they pick. Components to design the circuit have to be acquired by the team via auctioning using virtual money. </p>
+            </blockquote>
+            <div class="padding-lr-md">
+                <h3>Rules:</h3>
+                <h4>Round 1:</h4>
+                <ol>
+                    <li>A team must consist of two participants only. No restrictions on number of teams from each house. Maximum participation is encouraged.</li>
+                    <li>Round 1 is eliminative round. This round will be of 1 hour.</li>
+                    <li>Time constrains is considered during evaluation.</li>
+                    <li>Use of unfair means will lead to disqualification</li>
+                </ol>
+
+                <h4>Round 2</h4>
+                <ol>
+                    <li>Each team has to select one problem statement from the given lot.</li>
+                    <li>Required components can be purchased via virtual money provided to each team.</li>
+                    <li>Output of circuit will be tested on CRO.</li>
+                    <li>Each team will be given 5 min prior auctioning of components to decide the components they require for the respective circuit.</li>
+                    <li>Each team shall be allotted 1 hour for designing the circuit and displaying the output.</li>
+                    <li>Each team is required to have own soldering iron and other required tools.</li>
+                    <li>Details of components and auctioning will be disclosed later.</li>
+                    <li>In all cases the decision of the judge will be final and binding</li>
+                </ol>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section class="wide brand padding-bottom-none lift-sm" id="businext">
+            <article>
+                <h2 class="text-center">Businext</h2>
+                <blockquote style="text-align: left;border: 0">
+                    <p>Your house needs money to survive the war and only a creative and innovative business plan can save you from the impending doom.
+                    </p>
+                </blockquote>
+            </article>
+        </section>
+        <section class="alt">
+            <h2 class="text-center">Guidelines: -</h2>
+            <h2 class="padding-lr-md" style="color: currentColor">Round 1: Preliminary</h2>
+            <blockquote class="small padding-lr-sm">
+                <p>Teams/Individuals are required to send Comprehensive Business Plan not exceeding 4 pages (excluding exhibits &amp; references). The exhibits &amp; references could be of maximum 2 pages. In the event of the document exceeding the page limit mentioned above, the Reviewing Panel would be obliged to read only the pages included in the limit. We urge each Team to strictly stick comply with this page limit and in no circumstance exceed it.</p>
+                <p>Detailed Business Plan should be in PDF format. Format details: Arial, 12 point, 1” margins all around.
+                </p>
+            </blockquote>
+            <div class="padding-lr-md">
+                <h3>Apart from elaborating on the above-mentioned parameters, the complete business plan should include:</h3>
+                <ol>
+                    <li>Cover page</li>
+                    <li>Team Background(optional)</li>
+                    <li>Executive Summary</li>
+                    <li>Company introduction</li>
+                    <li>Customer needs/problems</li>
+                    <li>Solution to the problem</li>
+                    <li>Target Markets</li>
+                    <li>Products &amp; Road map</li>
+                    <li>Financials</li>
+                    <li>Risk</li>
+                    <li>Competition</li>
+                    <li>Appendices</li>
+                </ol>
+                <div class="padding-lr-md">
+                    <span style="font-weight: bold">*This is not an exhaustive list</span><br>
+                    <span>The teams are required to submit their Business Plan via email at jkavirbhav2k19@gmail.com</span><br>
+                    <span>The shortlisted teams shall be announced on the website</span>
+                </div>
+                <h2 class="padding-lr-sm" style="color: currentColor;margin-bottom: 0;margin-top: 15px;">Round 2 : The Final Presentation</h2>
+                <span class="padding-lr-md">Finally the top teams will be called to present their idea to our panel of judges</span><br><br>
+                <p class="text-center" style="font-weight: bold">*Last date of submission of comprehensive business plan is 16th of April, 2019.*</p>
+            </div>
+        </section>
+
+
+        <section class="wide brand padding-bottom-none lift-sm" id="quizzical">
+            <article>
+                <h2 class="text-center">Quizzical Monsters</h2>
+                <blockquote style="text-align: left;border: 0">
+                    <p>"Unlocking knowledge at the speed of thought"</p>
+                    <p>Today’s modern life is surrounded with tech products. The technology has been growing rapidly for quite some time, and has now become an important part of life. It’s time to exhibit your technical knowledge and skills. </p>
+                </blockquote>
+            </article>
+        </section>
+        <section class="alt">
+            <h2 class="text-center">Event Description:</h2>
+            <blockquote class="small padding-lr-sm">
+                <p>This event will be conducted in two rounds. First round (eliminative) tests the participant basic knowledge in computer science, electronics and quantitative aptitude. This is pen paper round with multiple choice questions.</p>
+                <p>Second round is stage round that further consists of three rounds.</p>
+            </blockquote>
+            <h2 class="padding-lr-sm">Rules:</h2>
+            <h2 class="padding-lr-md" style="color: currentColor">ELIMINATION ROUND –</h2>
+            <div class="padding-lr-md">
+                <ol>
+                    <li>Each team would be given a set of question paper containing 30 multiple choice objective type questions</li>
+                    <li>Time limit - 60 minutes</li>
+                    <li>Only 8 Teams would be selected for STAGE ROUNDS.</li>
+                    <li>The selected teams shall have to appear for the final round.</li>
+                    <li>Use of unfair means will lead to disqualification.</li>
+                </ol>
+            </div>
+            <h2 class="padding-lr-md" style="color: currentColor">FINAL QUIZ: STAGE ROUNDS </h2>
+            <h2 class="padding-lr-lg" style="color: currentColor">Round 1 : Tap Round</h2>
+            <div class="padding-lr-lg">
+                <ol>
+                    <li>A question will be fired & the team who tap the desk first get to answer first .</li>
+                    <li>20 marks for the correct answer and negative 10 marks for the wrong or if team doesn’t after they tapping the desk. – No forwarding.</li>
+                </ol>
+            </div>
+            <h2 class="padding-lr-lg" style="color: currentColor">Round 2: Rapid Fire Round</h2>
+            <div class="padding-lr-lg">
+                <ol>
+                    <li>Each team will be asked 10 questions one after another.</li>
+                    <li>10 marks for the correct answer and negative 5 marks for the wrong answer</li>
+                    <li>Answering time is only 5 seconds .</li>
+                    <li>Team discussion is allowed</li>
+                    <li>If a team cannot answer the question, they can say pass for the next question. The question will not be forwarded to the next team. </li>
+
+                </ol>
+            </div>
+            <h2 class="padding-lr-lg" style="color: currentColor">Round 3: Visual round</h2>
+            <div class="padding-lr-lg">
+                <ol>
+                    <li>Teams will be displayed picture and will have to answer.</li>
+                    <li>10 marks for the correct answer and negative 5 marks for the wrong answer </li>
+                    <li>Each Team would be asked visual questions. ( 1 slide in each round )</li>
+                    <li>Answering time is only 90 seconds. </li>
+                    <li>No passing to the next team. Audience can answer. </li>
+
+                </ol>
+            </div>
+            <p class="text-center" style="font-weight: bold">SURPRISE ROUND IN CASE OF TIE IN THE FINAL ROUND</p>
+        </section>
+
+    </main>
+    <script src="/static/events/technical/js/morph.js"></script>
+    <script src="/static/events/technical/js/main.js"></script>
+    <script type="text/javascript" src="https://secure.leadforensics.com/js/101832.js"></script>
+    <script type="text/javascript" src="https://mostlyserious.io/cpresources/lib/redactor/redactor.min.js?d=1535316202"></script>
+    {% endblock %}

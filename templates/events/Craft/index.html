@@ -1,0 +1,28 @@
+{% extends 'base3.html' %}
+
+{% block head %}
+<link href="/static/events/Craft/style.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+    .container {
+        margin: 25px 100px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
+    }
+</style>
+{% endblock %}
+
+
+{% block body %}
+    <div id="home">
+        <h1><a href="{% url 'craft' %}}">Craft Valley</a></h1>
+        <div id="nav_contact"><a href="{% url 'vanity' %}">Vanity Fair</a></div>
+        <div id="nav_collaborators"><a href="{% url 'faced' %}">Many Faced Gods</a></div>
+        <div id="nav_about"><a href="{% url 'castle' %}">Castle Ward</a></div>
+        <div id="nav_projects"><a href="{% url 'feast' %}">Feast for Crows</a></div>
+        <div id="nav_entertainment_arts"><a href="{% url 'rebirth' %}">The Rebirth</a></div>
+        <div id="nav_tourism_arts"><a href="{% url 'dcrossing' %}">Double Crossing</a></div>
+        <div id="nav_community_arts"><a href="{% url 'raven' %}">Raven</a></div>
+    </div>
+
+
+{% endblock %}

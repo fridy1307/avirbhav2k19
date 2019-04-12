@@ -1,0 +1,35 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Ganpoka - Celebration and Corporate HTML Template
+    Template URI: http://bootexperts.com
+    Description: Ganpoka - Celebration and Corporate HTML Template
+    Author: BootExperts
+    Author URI: http://bootexperts.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1.   Template Default CSS
+    2.   Header Area
+	3.   Hero Area
+	4.   Feature Area
+	5.   Gallery Area
+	6.   Event Area
+	7.   Blog Area
+	8.   Footer Area
+	
+-----------------------------------------------------------------------------------*/
+@import 'variabls';
+@import 'mixins';
+@import 'common';
+@import 'default';
+@import 'header';
+@import 'hero-slider';
+@import 'feature';
+@import 'gallery';
+@import 'event';
+@import 'blog';
+@import 'footer';

@@ -1,0 +1,54 @@
+/*----------------------------------------*/
+/*  4.  Feature Area
+/*----------------------------------------*/
+.feature-slider {
+    margin-bottom: 60px;
+}
+.feature-item {
+    & .image {
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        padding: 35px 30px;
+        background-color: $bg-color-dark;
+        & h4 {
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 400;
+            color: $color-white;
+            margin-bottom: 8px;
+            & a {
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+        & p {
+            color: $color-white; 
+            font-family: $font-montserrat;
+            font-size: 13px;
+            line-height: 14px;
+            & a {
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+        & .right {
+            padding-left: 23px;
+            border-left: 1px solid #575757;
+            @media #{$desktop-device}{
+                padding-left: 10px;
+            }
+            @media #{$small-mobile}{
+                padding-left: 10px;
+            }
+            @media #{$large-mobile}{
+                padding-left: 23px;
+            }
+            & .btn {}
+        }
+    }
+}

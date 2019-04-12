@@ -1,0 +1,395 @@
+/*----------------------------------------*/
+/*  7.  Blog Area
+/*----------------------------------------*/
+/*Single Blog Item*/
+.blog-item {
+    & .blog-image {
+        position: relative;
+        padding-left: 111px;
+        overflow: hidden;
+        @media #{$small-mobile}{
+            padding-left: 60px;
+        }
+        @media #{$large-mobile}{
+            padding-left: 111px;
+        }
+        & img {
+            width: 100%;
+        }
+        & .date {
+            height: 111px;
+            background-color: $theme-color;
+            position: absolute;
+            left: 111px;
+            top: 0;
+            color: $color-white;
+            line-height: 111px;
+            font-size: 55px;
+            font-weight: 700;
+            font-family: $font-montserrat;
+            padding: 0 27px;
+            @include transform(rotate(90deg));
+            @include transform-origin(left top);
+            @media #{$desktop-device}{
+                font-size: 38px;
+            }
+            @media #{$tablet-device}{
+                padding: 0 68px;
+            }
+            @media #{$small-mobile}{
+                font-size: 24px;
+                height: 60px;
+                left: 60px;
+                line-height: 60px;
+                padding: 0 22px;
+            }
+            @media #{$large-mobile}{
+                font-size: 38px;
+                height: 111px;
+                left: 111px;
+                line-height: 111px;
+                padding: 0 27px;
+            }
+        }
+    }
+    .blog-bottom {
+        padding: 22px 180px 22px 34px;
+        background-color: $bg-color-dark;
+        position: relative;
+        @media #{$small-mobile}{
+            padding: 22px 30px 22px 30px;
+        }
+        @media #{$large-mobile}{
+            padding: 22px 180px 22px 34px;
+        }
+        & h3 {
+            font-size: 24px;
+            margin-bottom: 0;
+            font-weight: 400;
+            & a{
+                color: $color-white;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+            @media #{$desktop-device}{
+                font-size: 20px;
+            }
+            @media #{$small-mobile}{
+                font-size: 20px;
+            }
+        }
+        & .btn {
+            position: absolute;
+            right: 30px;
+            top: 22px;
+            background-color: $color-white;
+            border-color: $color-white;
+            color: $bg-color-dark;
+            @media #{$small-mobile}{
+                position: static;
+                margin-top: 15px;
+            }
+            @media #{$large-mobile}{
+                position: absolute;
+                margin-top: 0;
+            }
+            &:hover {
+                color: $color-white;
+                border-color: $theme-color;
+                background-color: $theme-color;
+            }
+        }
+    }
+}
+
+/*Single Blog Details*/
+.single-blog-details {
+    margin-bottom: 60px;
+}
+.blog-details-media {
+    & img {
+        width: 100%;
+    }
+}
+.blog-details-content {
+    padding: 30px 0 50px;
+    & .blog-title {
+    color: $heading-color;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 5px;
+    }
+    /* Blog Meta */
+    & .blog-meta {
+        margin-bottom: 12px;
+        & a {
+            color: $text-color;
+            display: block;
+            float: left;
+            font-size: 12px;
+            line-height: 24px;
+            margin-right: 15px;
+            &:hover {
+                color: $theme-color;
+            }
+            & i {
+                display: block;
+                float: left;
+                font-size: 14px;
+                line-height: 24px;
+                margin-right: 7px;
+                padding-left: 2px;
+            }
+        }
+    }
+    & p {
+        color: $text-color;
+        font-weight: 300;
+        margin-bottom: 35px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+/* Blog Details Footer */
+.blog-details-footer {
+    border-bottom: 1px solid lighten( $text-color, 50% );
+    border-top: 1px solid lighten( $text-color, 50% );
+    padding: 10px 0;
+    & .blog-tags {
+        @media #{$small-mobile}{
+            float: left;
+            width: 100%;
+        }
+        & p {
+            color: $text-color;
+            display: block;
+            float: left;
+            margin-bottom: 0;
+            margin-right: 3px;
+            text-transform: capitalize;
+        }
+        & a { 
+            color: $text-color;
+            display: block;
+            float: left;
+            margin-right: 5px;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    & .blog-share {
+        @media #{$small-mobile}{
+            float: left;
+            width: 100%;
+            margin-top: 10px;
+        }
+        & p {
+            color: $text-color;
+            display: block;
+            float: left;
+            margin-bottom: 0;
+            margin-right: 12px;
+            text-transform: capitalize;
+        }
+        & a {
+            border: 1px solid lighten( $text-color, 40% );
+            border-radius: 50%;
+            color: lighten( $text-color, 20% );
+            display: block;
+            float: left;
+            height: 24px;
+            margin-right: 8px;
+            text-align: center;
+            width: 24px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                background-color: $theme-color;
+                border-color: $theme-color;
+                color: $color-white;
+            }
+            & i {
+                display: block;
+                font-size: 13px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+/* Blog Comment List */
+.comment-wrapper {
+    margin-bottom: 50px;
+    & h3 {
+        color: $heading-color;
+        font-size: 20px;
+        line-height: 16px;
+        margin: 0 0 30px;
+        padding-bottom: 12px;
+        position: relative;
+    }
+}
+.comment-list {
+    &.child {
+        margin-left: 110px;
+        @media #{$small-mobile}{
+            margin-left: 0;
+        }
+    }
+}
+.sin-comment {
+    border: 1px solid lighten( $text-color, 50% );
+    margin-bottom: 20px;
+    padding: 20px 50px 20px 20px;
+    & .image {
+        border: 2px solid lighten( $text-color, 50% );
+        border-radius: 2px;
+        margin-right: 20px;
+        width: 70px;
+        @media #{$small-mobile}{
+            display: block;
+            float: none;
+            margin-bottom: 15px;
+        }
+        @media #{$large-mobile}{
+            float: left;
+            margin-bottom: 0;
+        }
+        & img {}
+    }
+    & .content {
+        & h4 {
+            color: $heading-color;
+            display: block;
+            float: left;
+            font-size: 18px;
+            line-height: 20px;
+            margin: 0;
+            font-weight: 400;
+            @media #{$small-mobile}{
+                float: left;
+                width: 100%;
+            }
+        }
+        & h5 {
+            color: $heading-color;
+            float: right;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0;
+            font-weight: 400;
+            @media #{$small-mobile}{
+                float: left;
+                width: 100%;
+            }
+            & a {
+                color: $theme-color;
+                &:hover {
+                    color: $theme-color-dark;
+                }
+            }
+        }
+        & p {
+            color: $text-color;
+            display: block;
+            float: left;
+            font-weight: 300;
+            line-height: 22px;
+            margin-top: 5px;
+            width: 100%;
+        }
+    }
+}
+/* Blog Comment Form */
+.comment-form-wrapper {
+    & h3 {
+        color: $heading-color;
+        font-size: 20px;
+        line-height: 16px;
+        margin: 0 0 30px;
+        padding-bottom: 12px;
+        position: relative;
+    }
+}
+.comment-form {
+    & form {
+        margin-left: -15px;
+        margin-right: -15px;
+        & .input-box {
+            display: block;
+            float: left;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+            &.box-half {
+                width: 50%;
+                @media #{$small-mobile}{
+                    width: 100%;
+                }
+            }
+            & input[type="text"] {
+                background-color: transparent;
+                border-color: lighten( $text-color, 50% );
+                border-style: solid;
+                border-width: 0 0 1px;
+                color: $text-color;
+                font-size: 13px;
+                font-weight: 300;
+                height: 38px;
+                line-height: 24px;
+                padding: 7px 0;
+                width: 100%;
+            }
+            & input[type="email"] {
+                background-color: transparent;
+                border-color: lighten( $text-color, 50% );
+                border-style: solid;
+                border-width: 0 0 1px;
+                color: $text-color;
+                font-size: 13px;
+                font-weight: 300;
+                height: 38px;
+                line-height: 24px;
+                padding: 7px 0;
+                width: 100%;
+            }
+            & textarea {
+                background-color: transparent;
+                border-color: lighten( $text-color, 50% );
+                border-style: solid;
+                border-width: 0 0 1px;
+                color: $text-color;
+                font-size: 13px;
+                font-weight: 300;
+                height: 85px;
+                resize: none;
+                line-height: 24px;
+                padding: 7px 0;
+                width: 100%;
+            }
+            & input[type="submit"] {
+                background-color: $theme-color;
+                border: medium none;
+                border-radius: 50px;
+                color: $color-white;
+                font-size: 13px;
+                font-weight: 700;
+                height: 46px;
+                letter-spacing: 1.5px;
+                line-height: 48px;
+                text-transform: uppercase;
+                width: 180px;
+                &:hover {
+                    background-color: $theme-color-dark;
+                }
+            }
+        }
+        & > .input-box:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
