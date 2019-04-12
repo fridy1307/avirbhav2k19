@@ -1,0 +1,43 @@
+header {
+    background: #222222 !important;
+}
+body#bd {
+    background: #000000;
+}
+.plazart-mainnav .navbar-inner {
+    background: none !important; ;
+    filter: none !important;
+}
+.plazart-megamenu ul li ul.sub-menu {
+    visibility: hidden;
+}
+.plazart-megamenu ul li:hover ul.sub-menu {
+    visibility: visible;
+}
+.plazart-mainnav .navbar .nav > li > a {
+    color: #ffffff;
+}
+.plazart-mainnav .navbar .nav > li > a:hover,
+.plazart-megamenu ul.nav li ul li a:hover {
+    color: #00bfb8;
+}
+.plazart-megamenu ul.nav li ul li a {
+    color: #ffffff;
+}
+.container{
+    width: 1196px !important;
+}
+.tz_item {
+    background: #000000 !important;
+}
+#TzContent #portfolio .element .TzInner .info-item span, #TzContent #portfolio .element .TzInner .info-item a, #TzContent #portfolio .element .TzInner .info-item i {
+    color: #ffffff;
+}
+.TzArticleBlogTopInfo span, .TzArticleBlogTopInfo a, .TzArticleBlogTopInfo i,
+.TzArticleBlogBottomInfo span, .TzArticleBlogBottomInfo a, .TzArticleBlogBottomInfo i,
+#TzContent #portfolio .element .TzInner .TzPortfolioIntrotext p {
+    color: #ffffff;
+}
+.about-bk {
+    background: none !important;
+}

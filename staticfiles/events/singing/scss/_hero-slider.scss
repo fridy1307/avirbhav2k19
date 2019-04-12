@@ -1,0 +1,192 @@
+/*----------------------------------------*/
+/*  3.  Hero Area
+/*----------------------------------------*/
+.hero-area {
+    margin-top: 159px;
+    position: relative;
+    @media #{$small-mobile}{
+        margin-top: 125px;
+    }
+    @media #{$tablet-device}{
+        margin-top: 194px;
+    }
+    /*Slider Counter*/
+    & .slide-count {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 100px;
+        z-index: 9999;
+        & p {
+            float: right;
+            color: $color-white;
+            font-family: $font-covered;
+            font-size: 40px;
+            & span {
+                position: relative;
+                &.current {
+                    font-size: 100px;
+                    @media #{$tablet-device}{
+                        font-size: 80px;
+                    }
+                }
+                &.total {
+                    &::before {
+                        content: "/";
+                        position: relative;
+                        bottom: 3px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        font-size: 22px;
+                        font-family: $font-montserrat;
+                    }
+                }
+            }
+        }
+        @media #{$desktop-device}{
+            bottom: 30px;
+        }
+        @media #{$small-mobile}{
+            display: none;
+        }
+        @media #{$tablet-device}{
+            bottom: 20px;
+        }
+    }
+}
+/*-- Hero Slider --*/
+.hero-slider{}
+/*-- Hero Slide Item --*/
+.hs-item {
+    margin: 0;
+    position: relative;
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: $bg-color-dark;
+        opacity: 0.5;
+        content: "";
+    }
+    &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 230px;
+        background-color: $theme-color;
+        content: "";
+        right: -75px;
+        opacity: 0.5;
+        @include transform-origin (top);
+        @include transform(skewX(-28deg));
+        z-index: 1;
+        @media #{$laptop-device}{
+            right: -205px;
+        }
+        @media #{$desktop-device}{
+            right: -220px;
+        }
+        @media #{$tablet-device}{
+            right: -190px;
+        }
+    }
+    & img {
+        width: 100%;
+    }
+    & .hs-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        @include transform(translateY(-50%));
+        z-index: 5;
+        & * {
+            -webkit-animation-duration:1s;
+            animation-duration:1s;
+            -webkit-animation-fill-mode:both;
+            animation-fill-mode:both
+        }
+        & h1 {
+            font-family: $font-covered;
+            font-size: 95px;
+            color: $color-white;
+            letter-spacing: -.2px;
+            margin-bottom: 5px;
+            @media #{$desktop-device}{
+                font-size: 70px;
+            }
+            @media #{$tablet-device}{
+                font-size: 54px;
+            }
+            @media #{$small-mobile}{
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            @media #{$large-mobile}{
+                font-size: 30px;
+            }
+        }
+        & p {
+            font-size: 22px;
+            font-family: $font-poppins;
+            color: $color-white;
+            padding: 0 15px;
+            line-height: 36px;
+            margin-bottom: 30px;
+            @media #{$desktop-device}{
+                font-size: 20px;
+            }
+            @media #{$tablet-device}{
+                font-size: 18px;
+                line-height: 32px;
+            }
+            @media #{$small-mobile}{
+                display: none;
+            }
+            @media #{$large-mobile}{
+                display: block;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 15px;
+            }
+        }
+        & a {
+            letter-spacing: 1px;
+            font-weight: 700;
+            @media #{$small-mobile}{
+                font-size: 12px;
+                height: 36px;
+                padding: 5px 20px;
+            }
+            @media #{$large-mobile}{
+                font-size: 14px;
+                height: 40px;
+                padding: 8px 30px;
+            }
+        }
+    }
+    &.slick-current {
+        & .hs-content {
+            & h1{
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+                -webkit-animation-delay: 0.5s;
+                animation-delay: 0.5s;
+            }
+            & p{
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+                -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+            }
+            & a{
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+                -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s;
+            }
+        }
+    }
+}

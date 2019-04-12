@@ -1,0 +1,88 @@
+.footerattr ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footerattr ul li {
+    line-height: 35px;
+    padding: 0;
+}
+
+.footerattr ul.tzcontact-info li {
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    padding-left: 35px;
+    padding-top: 0;
+    position: relative;
+}
+
+.footerattr ul.tzcontact-info li i {
+    font-size: 17px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+}
+
+.footerattr ul li a {
+    color: #8E8D8D;
+}
+
+.footerattr ul li a:hover,
+.footerattr ul li a:active,
+.footerattr ul li a:focus {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #00BFB8;
+}
+
+.footerattr .tweet-item {
+    padding: 0 0 20px;
+}
+
+.footerattr .tweet-content {
+    font-size: 13px;
+    line-height: 22px;
+    color: #8E8D8D;
+}
+
+.footerattr .tweet-content a {
+    color: #00BFB8;
+}
+
+.twitter-user strong.name,
+.twitter-user span.screen_name {
+    color: #00BFB8;
+}
+
+.footerattr .twitter-follow-button {
+    margin-top: 5px;
+}
+
+.footerattr .tweet-content span.time {
+    display: block;
+    color: #6A6A6A;
+    font-size: 11px;
+    font-style: italic;
+    line-height: 20px;
+}
+
+.footerattr .tweet-content span.time a {
+    color: #6A6A6A;
+}
+
+#tz-breadcrumb {
+    color: #BDC3C7;
+    font-weight: 700;
+    padding: 11px 0px;
+}
+
+#tz-breadcrumb a {
+    color: #BDC3C7;
+    font-weight: 700;
+    padding: 11px 0px;
+}
+
+#tz-breadcrumb i {
+    padding: 0 8px;
+}

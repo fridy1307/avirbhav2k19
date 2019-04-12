@@ -1,0 +1,27 @@
+// Font Family
+$font-covered: 'Covered By Your Grace', cursive;
+$font-poppins: 'Poppins', sans-serif;
+$font-montserrat: Montserrat;
+
+// Colors
+
+//Theme Color
+$theme-color: #f65589;
+//Theme Color Dark
+$theme-color-dark: #c6406b;
+//Heading Color
+$heading-color: #636363;
+//Text Color
+$color-white: #fff;
+$text-color: #606060;
+//Text Color Light
+$text-color-light: #d6d6d6;
+//Background Color Dark
+$bg-color-dark: #262626;
+//Responsive Variables
+$laptop-device : 'only screen and (min-width: 1201px) and (max-width: 1450px)';
+$desktop-device : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$tablet-device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$small-mobile:'only screen and (max-width: 767px)';
+$large-mobile: 'only screen and (min-width: 480px) and (max-width: 767px)';
+

@@ -1,0 +1,446 @@
+/*-------------Custom Responsive----------------*/
+
+@media (min-width: 980px) and (max-width: 1199px) {
+    .tz-sidebar-woocommerce aside.widget_price_filter .price_slider_amount .price_label {
+        float: left;
+    }
+    .tz_shop_table form table.cart tbody tr td.actions .coupon {
+        text-align: left;
+        float: none;
+        margin: 0 0 20px;
+    }
+    .plazart-mainnav .navbar .nav>li>a {
+        font-size: 16px;
+        padding: 9px 25px 9px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    body input,
+    body textarea,
+    body .uneditable-input {
+        width: 78% !important;
+    }
+    body #tz-right #calendar_wrap {
+        padding: 20px 0px;
+    }
+    div.tz_comment p.form-submit input#submit {
+        width: 28% !important;
+        font-size: 12px !important;
+    }
+    .inputbox,
+    #tz-right aside input.Tzsearchform {
+        font-size: 12px !important;
+    }
+    .tziconsearch {
+        right: 9% !important;
+    }
+    #tz-right aside.tribe-events-list-widget h4 a {
+        line-height: 25px !important;
+    }
+    .pagination .wp-pagenavi span.current {
+        display: inline-block;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+        padding: 15px 20px !important;
+    }
+    .pagination .wp-pagenavi span.pages,
+    .pagination .wp-pagenavi a {
+        display: inline-block;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+        padding: 15px 20px !important;
+    }
+    div.pagination {
+        margin-bottom: 15px !important;
+        margin-top: 10px !important;
+    }
+    .TzBlog .TzBlogInner .TzItemsRow .TzItem {
+        margin-bottom: 30px;
+    }
+    body ol.curtains>li img.event-image {
+        height: 100%;
+        max-width: none;
+        width: auto !important;
+    }
+    div div.contact input#form-submit {
+        padding: 0px 20px 0px !important;
+        height: 34px !important;
+        width: auto !important;
+    }
+    #tz-right aside input.Tzsearchform {
+        width: 45% !important;
+    }
+    .tz-event ul.countdown li span.days,
+    .tz-event ul.countdown li span.hours,
+    .tz-event ul.countdown li span.minutes,
+    .tz-event ul.countdown li span.seconds {
+        font-size: 85px !important;
+    }
+    .tz-event ul.countdown li span.text {
+        margin-top: 0 !important;
+    }
+    .btn-demo {
+        font-size: 12px !important;
+        padding: 10px 15px !important;
+    }
+    body #tz-component-wrapper input,
+    body textarea,
+    body .uneditable-input {
+        width: 93% !important;
+    }
+    .tz-detail-box .woocommerce-checkout #payment ul.payment_methods li input {
+        width: auto !important;
+    }
+    .tziconsearch {
+        right: 12% !important;
+    }
+    /*woocommerce*/
+    .tz-result-count {
+        padding: 0;
+    }
+    .tz_contain_inner {
+        margin: 0 5px 5px 0;
+    }
+    .tz_product_img {
+        height: 300px;
+    }
+    .tz_title_product h3 a,
+    .tz_product_price span.price del span.amount,
+    .tz_product_price a.tz_read_more_product {
+        font-size: 14px;
+    }
+    .tz_category_product .star-rating {
+        font-size: 14px;
+        margin: 5px 0 0;
+    }
+    .tz_product_price span.price span.amount {
+        font-size: 18px;
+    }
+    h3.module-title span {
+        font-size: 13px;
+    }
+    .tz-sidebar-woocommerce aside.widget ul li a,
+    .tz-sidebar-woocommerce aside.widget ul li small.count {
+        font-size: 13px;
+    }
+    .tz-sidebar-woocommerce aside.widget_price_filter .price_slider_amount .price_label {
+        float: left;
+    }
+    .tz-sidebar-woocommerce aside.widget ul.product_list_widget li a img {
+        width: 32px;
+        margin-left: 0;
+    }
+    .tz-sidebar-woocommerce aside.widget ul.product_list_widget li .star-rating,
+    .tz-sidebar-woocommerce aside.widget ul.product_list_widget li span.reviewer {
+        font-size: 10px;
+    }
+    .tz-sidebar-woocommerce aside.widget {
+        margin-bottom: 10px;
+    }
+    .tz_upsells_products:after {
+        bottom: -15px;
+    }
+    .tz_entry_summary form.cart .quantity input.minus,
+    .tz_entry_summary form.cart .quantity input.qty,
+    .tz_entry_summary form.cart .quantity input.plus {
+        width: 30px !important;
+    }
+    .tzproduct_detail ul.slides li {
+        height: 400px;
+    }
+    .tzlogin_woocommerce form.login p.form-row label input#rememberme {
+        width: 0 !important;
+    }
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-thumbnail {
+        display: block;
+    }
+    .tz_shop_table form table.shop_table thead tr th.product-thumbnail {
+        display: block;
+    }
+    .tz_shop_table form table.cart tbody tr td.actions .coupon {
+        text-align: left;
+        float: none;
+    }
+    body #tz-component-wrapper .tz_shop_table form table.shop_table tbody tr.cart_item td.product-quantity .quantity input.minus,
+    body #tz-component-wrapper .tz_shop_table form table.shop_table tbody tr.cart_item td.product-quantity .quantity input.qty,
+    body #tz-component-wrapper .tz_shop_table form table.shop_table tbody tr.cart_item td.product-quantity .quantity input.plus {
+        width: 30px !important;
+    }
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-price span.amount,
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-subtotal span.amount {
+        font-size: 18px;
+    }
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-quantity .quantity input.qty {
+        padding: 0 15px !important;
+    }
+    .tz_shop_table form table.cart tbody tr td.actions .coupon input.input-text {
+        margin: 10px 0 0;
+    }
+    body #tz-component-wrapper .tz_shop_table form table.cart tbody tr td.actions .coupon input.button {
+        float: none;
+        width: auto !important;
+        margin: 10px 0 0;
+    }
+    body #tz-component-wrapper .tz_shop_table form table.cart tbody tr td.actions input.button {
+        width: auto !important;
+    }
+    .tz_entry_summary h1.product_title {
+        font-size: 25px;
+    }
+}
+
+/*==========================================
+ Landscape phone to portrait tablet
+ ===========================================*/
+
+@media (max-width: 767px) {
+    div.pagination {
+        margin-top: 8px !important;
+    }
+    .pagination .wp-pagenavi span.current {
+        padding: 10px 15px !important;
+        font-weight: 300 !important;
+        font-size: 12px !important;
+    }
+    .pagination .wp-pagenavi span.pages,
+    .pagination .wp-pagenavi a {
+        padding: 10px 15px !important;
+        font-weight: 300 !important;
+        font-size: 12px !important;
+    }
+    body .row-fluid .span2,
+    .row-fluid .span4 {
+        width: 100%;
+        margin: 0 !important;
+    }
+    body #tz-right aside input.Tzsearchform {
+        width: 81% !important;
+    }
+    body #tz-right .inputbox {
+        width: 87% !important;
+    }
+    /*woocommerce*/
+    .tz-result-count {
+        padding: 0;
+    }
+    .tz_contain_inner {
+        margin: 0 10px 10px 0;
+    }
+    .tz-sidebar-woocommerce aside.widget form#searchform input#searchsubmit {
+        margin-bottom: 10px;
+    }
+    .tz_product_price span.price span.amount {
+        font-size: 18px;
+    }
+    .tz_upsells_products:after {
+        bottom: -15px;
+    }
+    .tz_shop_table form table.shop_table thead tr th {
+        text-align: center;
+    }
+    .tz_shop_table form table.shop_table thead tr th:nth-child(2),
+    .tz_shop_table form table.shop_table thead tr th:nth-child(5),
+    .tz_shop_table form table.shop_table thead tr th:last-child,
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-thumbnail a img,
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-quantity,
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-subtotal,
+    .tz-detail-box form#yith-wcwl-form table.shop_table tbody tr td.product-thumbnail,
+    .tz-detail-box form#yith-wcwl-form table.shop_table tbody tr td.product-stock-status,
+    .tz-detail-box form#yith-wcwl-form table.shop_table tbody tr td.product-thumbnail,
+    .tz-detail-box form#yith-wcwl-form table.shop_table tbody tr td.product-add-to-cart,
+    .tz-detail-box form#yith-wcwl-form table.shop_table thead th.product-stock-stauts,
+    .tz-detail-box form#yith-wcwl-form table.shop_table thead th.product-add-to-cart {
+        display: none;
+    }
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-remove a.remove {
+        font-size: 1em;
+    }
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-name a,
+    .tz_shop_table table.shop_table tr td.product-name dl.variation dt,
+    .tz_shop_table table.shop_table tr td.product-name dl.variation dd p {
+        font-size: 12px;
+    }
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-price span.amount {
+        font-size: 14px !important;
+    }
+    .tz_cart-collaterals .cart-collaterals .tz-shipping {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .tz_shop_table form table.shop_table tbody tr.cart_item td {
+        text-align: center;
+    }
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-quantity .quantity {
+        margin: 0 auto;
+    }
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-remove a.remove {
+        margin: 0 auto;
+    }
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-name .woocommerce-product-rating .star-rating {
+        float: none;
+        margin: 10px auto 0;
+    }
+    .tz_shop_table table.shop_table tr td.product-name dl.variation dt {
+        float: none;
+    }
+    .tz_shop_table table.shop_table tr td.product-name dl.variation dd {
+        float: none;
+    }
+    .tz_shop_table table.shop_table tr td.product-name dl.variation dd p {
+        margin-right: 5px;
+    }
+    .tz_shop_table form table.cart tbody tr td.actions .coupon label {
+        display: block;
+    }
+    .tz_shop_table form table.cart tbody tr td.actions .coupon input.button {
+        float: none;
+        margin: 10px 0 0;
+        width: auto;
+    }
+    .tz_shop_table form table.cart tbody tr td.actions input.button {
+        margin: 10px 0 0;
+        width: auto;
+    }
+    .tz_shop_table form table.shop_table tbody tr.cart_item td.product-thumbnail {
+        width: auto;
+    }
+    .tz_shop_table form table.cart tbody tr td.actions .coupon input.input-text {
+        width: 100%;
+        margin: 10px 0 0;
+    }
+    .tz_form_yith-wcwl-form form h2 {
+        font-size: 24px;
+    }
+    .tz_form_yith-wcwl-form form table.shop_table thead tr th.product-thumbnail {
+        display: block;
+    }
+    .tz_form_yith-wcwl-form form table.shop_table thead tr th {
+        display: block;
+        text-align: center;
+    }
+    .tz_form_yith-wcwl-form form table.shop_table tbody tr td {
+        display: block;
+        text-align: center;
+    }
+    .tz_form_yith-wcwl-form form table.shop_table tbody tr td.product-thumbnail {
+        width: auto;
+        display: block;
+    }
+    .tz_form_yith-wcwl-form form table.shop_table tbody tr td.product-remove a.remove {
+        margin: 0 auto;
+    }
+    .tz_checkout_coupon form.checkout_coupon p input.input-text {
+        height: 33px;
+    }
+}
+
+/*====================================
+Landscape phones and down
+ =====================================*/
+
+@media (max-width: 480px) {
+    div.pagination {
+        margin-top: 0px !important;
+    }
+    #custom-event #tribe-bar-form .tribe-bar-submit input[type="submit"] {
+        height: 35px !important;
+    }
+    #custom-event .tribe-bar-search-filter {
+        display: none !important;
+    }
+    div div.contact {
+        margin-bottom: 0 !important;
+    }
+    .btn-demo {
+        font-size: 10px !important;
+        padding: 5px 10px !important;
+    }
+    /*woocommerce*/
+    .tz-result-count p.woocommerce-result-count {
+        display: block;
+        float: none;
+    }
+    .tz-result-count form.woocommerce-ordering {
+        float: left;
+    }
+    .tz_title_product h3 a,
+    .tz_category_product a,
+    .tz_category_product .star-rating,
+    .tz_product_price span.price del span.amount,
+    .tz_product_price a.tz_read_more_product {
+        font-size: 13px;
+    }
+    h3.module-title span {
+        font-size: 15px;
+    }
+    .tz-sidebar-woocommerce aside.widget ul li a,
+    .tz-sidebar-woocommerce aside.widget ul li small.count {
+        font-size: 14px;
+    }
+    .tz-sidebar-woocommerce aside.widget ul.product_list_widget li .star-rating,
+    .tz-sidebar-woocommerce aside.widget ul.product_list_widget li span.reviewer {
+        font-size: 12px;
+    }
+    .tz-sidebar-woocommerce {
+        margin: 0;
+    }
+    .tz-sidebar-woocommerce aside.widget {
+        margin-bottom: 20px;
+    }
+    .tz_product_img {
+        height: 300px;
+    }
+    .tzproduct_detail ul.slides li {
+        height: 300px;
+    }
+    .tz_entry_summary h1.product_title {
+        font-size: 20px;
+    }
+    .tz_entry_summary p.price del span.amount,
+    .tzvariable-product .single_variation span.price del span.amount {
+        font-size: 14px;
+    }
+    .tz_entry_summary p.price span.amount {
+        font-size: 20px;
+    }
+    .tz_entry_summary>div>p {
+        font-size: 13px;
+    }
+    .tz_entry_summary .product_meta span {
+        margin-bottom: 5px;
+    }
+    .tz_product_tabs .woocommerce-tabs .panel p {
+        font-size: 13px;
+    }
+    .tzlogin_woocommerce form.login p.form-row label {
+        font-size: 11px;
+    }
+    .tzedit_address p.form-row input.input-text {
+        height: 30px;
+    }
+    .tz_entry_summary form.cart button.button.alt {
+        margin: 0 10px 10px 0;
+    }
+    .tz_cross-sells .cross-sells h2 {
+        font-size: 15px;
+    }
+    .tz_cart-collaterals .cart-collaterals form.shipping_calculator .shipping-calculator-form p.tz_form_row_style:before,
+    .tz_cart-collaterals .cart-collaterals form.shipping_calculator .shipping-calculator-form p.tz_form_row_style:after,
+    .tz-result-count form .tz_select_orderby:before,
+    .tz-result-count form .tz_select_orderby:after {
+        display: none;
+    }
+}
+
+.tzdemo_button .btn-demo {
+    margin: 0 15px 25px 0;
+}
+
+.h3_pro_demo:first-child {
+    margin: 0px 0px 30px !important;
+}
+
+.h3_pro_demo {
+    margin: 30px 0px !important;
+}

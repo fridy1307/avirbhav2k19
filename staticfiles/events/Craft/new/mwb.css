@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+.maincontent.photo_content {
+    width: 605px
+}
+
+.maincontent.photo_content p {
+    background: none;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.maincontent.photo_content h2 {
+    color: #47506a;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.maincontent.photo_content h3 {
+    color: #B34542;
+    font-size: 17px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.maincontent.photo_content #footer {
+    width: 100%;
+    background-repeat: repeat-x;
+}
+
+.photo_list_row {
+    overflow: hidden;
+    margin-bottom: 36px;
+}
+
+.photo_list_row .photo_item {
+    float: left;
+    width: 288px;
+}
+
+.photo_list_row .photo_item.item_right {
+    float: right;
+}
+
+.photo_list_row .photo_item .phogoFeature {
+    border: 9px solid #fff;
+    margin-bottom: 20px;
+}
+
+.photo_list_row .photo_item .photo_title {
+    color: #b34542;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.maincontent.photo_content .photo_list_row .photo_item p {
+    margin-bottom: 10px;
+}
+
+.photo_list_row .photo_item .view_gallery {
+    color: #ae882c;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.photo_list {
+    overflow: hidden;
+    margin-left: -20px;
+    width: 621px;
+}
+
+.photo_list li {
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.photo_list li img {
+    border: 8px solid #fff;
+}
+
+.other_projects {
+    overflow: hidden;
+}
+
+.other_projects a.other_link {
+    float: left;
+    display: block;
+    margin-right: 12px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #4c78af;
+    font-size: 14px;
+    background: #fff;
+}
+
+.vimeo_section {
+    margin-bottom: 20px;
+}
+
+.vimeo_section {
+    border: 7px solid #fff;
+    height: 330px;
+}
+
+.vimeo_section iframe {
+    margin: 0;
+    padding: 0;
+}
+
+.maincontent .film {
+    padding-bottom: 40px;
+}
+
+.maincontent .photo {
+    padding-bottom: 40px;
+}
+
+.maincontent .project {
+    padding-bottom: 40px;
+}
+
+/****************yhj-2015-0-121*****************************/
+
+.vimeo_section iframe {
+    width: 100% !important;
+    height: 330px !important;
+    padding: 0px !important;
+    margin: 0 !important;
+}

@@ -1,0 +1,193 @@
+/*-----------------css menu-------------------*/
+
+/*end class menu*/
+
+.tz-logo a span {
+    font-size: 40px;
+    color: #00bfb8;
+}
+
+.plazart-megamenu ul {
+    border-radius: 0;
+}
+
+.plazart-megamenu ul li ul {
+    border: 1px solid rgba(255, 229, 231, 0.1);
+    list-style: none outside none;
+    margin: 0;
+    padding: 10px 20px;
+    position: absolute;
+    z-index: 99999;
+    background: #383838;
+    min-width: 160px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -mos-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: visibility 0s linear 0s, top 0.3s linear 0s;
+    -ms-transition: visibility 0s linear 0s, top 0.3s linear 0s;
+    -moz-transition: visibility 0s linear 0s, top 0.3s linear 0s;
+    -webkit-transition: visibility 0s linear 0s, top 0.3s linear 0s;
+    -o-transition: visibility 0s linear 0s, top 0.3s linear 0s;
+}
+
+.plazart-megamenu ul.nav li {
+    position: relative;
+}
+
+.plazart-megamenu ul.nav li ul li {
+    display: block;
+    float: none;
+    position: relative;
+    padding: 0;
+}
+
+.plazart-megamenu ul.nav li ul li:first-child a {
+    border-top: 0;
+}
+
+.plazart-megamenu ul.nav li ul li a {
+    font-family: 'Raleway', Arial, sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    font-weight: 300;
+    padding: 9px 0;
+    display: block;
+}
+
+.plazart-megamenu ul.nav li ul li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #00bfb8 !important;
+}
+
+/*menu lv3*/
+
+.plazart-megamenu ul li ul.sub-menu li ul {
+    border: 1px solid rgba(255, 229, 231, 0.1);
+    list-style: none outside none;
+    margin: 0;
+    padding: 10px 20px;
+    width: 160px;
+    position: absolute;
+    top: -6px !important;
+    z-index: 999999;
+    background: #383838;
+    transition: visibility 0s linear 0s, left 0.3s linear 0s;
+    -ms-transition: visibility 0s linear 0s, left 0.3s linear 0s;
+    -moz-transition: visibility 0s linear 0s, left 0.3s linear 0s;
+    -webkit-transition: visibility 0.1s linear 0s, left 0.3s linear 0s;
+    -o-transition: visibility 0s linear 0s, left 0.3s linear 0s;
+}
+
+.plazart-megamenu ul li ul.sub-menu li ul li:first-child a {
+    border-top: 0;
+}
+
+.plazart-megamenu ul li ul.sub-menu li ul li a {
+    font-family: 'Raleway', Arial, sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    font-weight: 300;
+    padding: 9px 0;
+    display: block;
+}
+
+.plazart-megamenu ul.nav li.current-menu-item a,
+.plazart-megamenu ul.nav li.current-menu-parent a {
+    color: #00bfb8;
+}
+
+.plazart-megamenu ul.nav li ul li.current-menu-item a {
+    color: #00bfb8 !important;
+}
+
+.plazart-megamenu ul.nav li.current-menu-item ul li a {
+    color: #ffffff;
+}
+
+.plazart-megamenu ul.nav li.current-menu-parent ul li a {
+    color: #ffffff;
+}
+
+.tz_item_element {
+    height: 100%;
+}
+
+@media (min-width: 980px) {
+    .plazart-megamenu ul li ul {
+        left: 0;
+    }
+    .plazart-megamenu ul li ul.sub-menu {
+        top: 138%;
+        visibility: hidden;
+    }
+    .plazart-megamenu ul li ul.sub-menu li ul,
+    .plazart-megamenu ul li ul.sub-menu li ul.sub-menu,
+    .plazart-megamenu ul li ul.sub-menu li ul.sub-menu li ul,
+    .plazart-megamenu ul li ul.sub-menu li ul.sub-menu li ul li ul,
+    .plazart-megamenu ul li ul.sub-menu li ul.sub-menu li ul li ul li ul,
+    .plazart-megamenu ul li ul.sub-menu li ul.sub-menu li ul li ul li ul li ul {
+        left: 100%;
+        visibility: hidden;
+    }
+    /*Hover Menu*/
+    .plazart-megamenu ul li:hover ul.sub-menu {
+        top: 100%;
+        visibility: visible;
+    }
+    .plazart-megamenu ul li ul li:hover ul.sub-menu,
+    .plazart-megamenu ul li ul li ul li:hover ul.sub-menu,
+    .plazart-megamenu ul li ul li ul li ul li:hover ul.sub-menu,
+    .plazart-megamenu ul li ul li ul li ul li ul li:hover ul.sub-menu {
+        visibility: visible;
+        left: 89%;
+    }
+}
+
+@media (max-width: 979px) {
+    .plazart-megamenu ul li ul {
+        border: 1px solid rgba(255, 229, 231, 0.1);
+        list-style: none outside none;
+        margin: 0;
+        padding: 10px 20px;
+        position: relative !important;
+        z-index: 99999;
+        background: #383838;
+        min-width: 160px;
+    }
+    .plazart-megamenu ul li ul.sub-menu li ul {
+        border: 0 !important;
+    }
+    .plazart-megamenu ul li ul {
+        box-shadow: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagination .wp-pagenavi span.current {
+        padding: 10px 15px !important;
+        display: inline-block !important;
+        font-size: 10px !important;
+    }
+    .pagination .wp-pagenavi span.pages,
+    .pagination .wp-pagenavi a {
+        padding: 10px 15px !important;
+        display: inline-block !important;
+        font-size: 10px !important;
+    }
+    body #tz-right aside.tribe-events-list-widget h4 a {
+        line-height: 25px;
+    }
+}
+
+/*.showbiz .mediaholder img{*/
+
+/*height: 280px !important;*/
+
+/*}*/
+
+.tznew-responsive .showbiz-container .overflowholder ul li {}

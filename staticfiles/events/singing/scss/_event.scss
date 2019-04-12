@@ -1,0 +1,107 @@
+/*----------------------------------------*/
+/*  6.  Event Area
+/*----------------------------------------*/
+.event-area {
+    background-color: $bg-color-dark;
+}
+.event-item {
+    background-color: $color-white;
+    position: relative;
+    border-radius: 40px;
+    margin-bottom: 40px;
+    @include transition(all 0.3s ease 0s);
+    &::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 170px;
+        background-color: #292929;
+        content: "";
+        right: 0;
+        opacity: 0.1;
+        @include transform-origin (bottom);
+        right: -4px;
+        @include transform(skewX(-28deg));
+    }
+    &:hover {
+        background-color: $theme-color;
+    }
+    & .image {
+        width: 170px;
+        border-right: 3px solid $theme-color;
+        @include transition(all 0.3s ease 0s);
+        @media #{$small-mobile} {
+            width: 100%;
+            border: 0px solid transparent;
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    &:hover .image {
+        border-color: $color-white;
+    }
+    & .content {
+        padding: 20px 17px;
+        max-width: 360px;
+        @media #{$small-mobile} {
+            min-width: 100%;
+            padding: 20px 30px;
+        }
+        & h3 {
+            font-size: 24px;
+            font-family: $font-montserrat;
+            margin-bottom: 15px;
+            color: $text-color;
+            font-weight: 400;
+            & a {
+                display: block;
+                color: inherit;
+            }
+        }
+        & p {
+            font-size: 15px;
+            font-weight: 300;
+            font-family: $font-montserrat;
+            margin-bottom: 0;
+            line-height: 20px;
+            color: $text-color;
+            @include transition(color 0.3s ease 0s);
+            & span {
+                font-weight: 400;
+                line-height: inherit;
+                @include transition(color 0s ease 0s);
+            }
+        }
+    }
+    &:hover .content {
+        & h3 {
+            color: $color-white;
+            & a {
+                color: $color-white;
+            }
+        }
+        & p {
+            color: $color-white;
+        }
+    }
+    & .action {
+        padding-right: 60px;
+        padding-top: 38px;
+        padding-bottom: 38px;
+        @media #{$tablet-device}{
+            padding-right: 35px;
+        }
+        @media #{$small-mobile} {
+            padding-top: 0;
+            padding-right: 0;
+            padding-left: 30px;
+            padding-bottom: 30px;
+            float: left;
+        }
+        & .btn {}
+    }
+    &:hover .btn {
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    }
+}
