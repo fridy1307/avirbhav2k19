@@ -76,27 +76,27 @@ WSGI_APPLICATION = 'avirbhav.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'jkinsti1_avirbhav',
-#        'USER': 'jkinsti1_alita',
-#        'PASSWORD': '$YA&Zk&3ja?%',
-#        'HOST': '103.120.176.19',
-#        'PORT': '3306'
-#    }
-# }
-
 DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME':'avirbhav19',
-            'USER':'root',
-            'PASSWORD':'',
-            'HOST':'localhost',
-            'PORT':''
-            }
-        }
+   'default': {
+       'ENGINE': 'django.db.backends.mysql',
+       'NAME': 'jkinsti1_avirbhav',
+       'USER': 'jkinsti1_alita',
+       'PASSWORD': '$YA&Zk&3ja?%',
+       'HOST': '103.120.176.19',
+       'PORT': '3306'
+   }
+}
+
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.mysql',
+#             'NAME':'avirbhav19',
+#             'USER':'root',
+#             'PASSWORD':'',
+#             'HOST':'localhost',
+#             'PORT':''
+#             }
+#         }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
