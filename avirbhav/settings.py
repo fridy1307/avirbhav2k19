@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'k+aq6=$zo#eat=@v7*u)@e1_q)mq#mxj-25#crb1v0mo$6jk3^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -76,27 +76,27 @@ WSGI_APPLICATION = 'avirbhav.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.mysql',
-       'NAME': 'jkinsti1_avirbhav',
-       'USER': 'jkinsti1_alita',
-       'PASSWORD': '$YA&Zk&3ja?%',
-       'HOST': '103.120.176.19',
-       'PORT': '3306'
-   }
-}
-
 # DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.mysql',
-#             'NAME':'avirbhav19',
-#             'USER':'root',
-#             'PASSWORD':'',
-#             'HOST':'localhost',
-#             'PORT':''
-#             }
-#         }
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'jkinsti1_avirbhav',
+#        'USER': 'jkinsti1_alita',
+#        'PASSWORD': '$YA&Zk&3ja?%',
+#        'HOST': '103.120.176.19',
+#        'PORT': '3306'
+#    }
+# }
+
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME':'avirbhav19',
+            'USER':'root',
+            'PASSWORD':'',
+            'HOST':'localhost',
+            'PORT':''
+            }
+        }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

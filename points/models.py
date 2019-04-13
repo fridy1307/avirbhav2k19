@@ -16,4 +16,6 @@ class point(models.Model):
     def __str__(self):
         return self.name
 
+# def lanister(models.Model):
+#     for_event = models.CharField(max_length=200)
     
