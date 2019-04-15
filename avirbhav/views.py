@@ -16,12 +16,19 @@ def index(request):
         baratheon.append(point.baratheons)
         targaryen.append(point.targaryens)
         stark.append(point.starks)
+
+    
     for p in lenister:
         lenisters_p += p
+
+
     for p in baratheon:
         baratheons_p += p
+
+
     for p in targaryen:
         targaryens_p += p
+        
     for p in stark:
         starks_p += p
 
