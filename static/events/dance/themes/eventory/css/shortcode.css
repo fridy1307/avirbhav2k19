@@ -1,0 +1,218 @@
+div.progress .width100 {
+    width: 100%;
+}
+
+div.progress .width90 {
+    width: 90%;
+}
+
+div.progress .width80 {
+    width: 80%;
+}
+
+div.progress .width70 {
+    width: 70%;
+}
+
+div.progress .width60 {
+    width: 60%;
+}
+
+div.progress .width50 {
+    width: 50%;
+}
+
+div.progress .width40 {
+    width: 40%;
+}
+
+div.progress .width30 {
+    width: 30%;
+}
+
+div.progress .width20 {
+    width: 20%;
+}
+
+div.progress .width10 {
+    width: 10%;
+}
+
+body table.table {
+    margin: 0;
+}
+
+body table.table tr th {
+    color: rgba(197, 197, 197, 0.85);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body table.table tr td {
+    border-top: 1px solid #373838;
+    color: rgba(197, 197, 197, 0.85);
+    font-size: 14px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+}
+
+/*------------- List -----------*/
+
+.plazart-list {
+    list-style: disc outside none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.plazart-list li {
+    background: none;
+    display: list-item;
+    list-style: none outside none;
+    padding-left: 25px;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.list-default li {
+    background: url("../images/icons/list-default.png") no-repeat scroll 0 center transparent;
+}
+
+.list-check li {
+    background: url("../images/icons/list-check.png") no-repeat scroll 0 center transparent;
+}
+
+.list-arrow li {
+    background: url("../images/icons/list-arrow.png") no-repeat scroll 0 center transparent;
+}
+
+.list-star li {
+    background: url("../images/icons/list-star.png") no-repeat scroll 0 center transparent;
+}
+
+.list-comments li {
+    background: url("../images/icons/list-comments.png") no-repeat scroll 0 center transparent;
+}
+
+.list-clip li {
+    background: url("../images/icons/list-clip.png") no-repeat scroll 0 center transparent;
+}
+
+.list-hook li {
+    background: url("../images/icons/list-hook.png") no-repeat scroll 0 center transparent;
+}
+
+.list-wheel li {
+    background: url("../images/icons/list-wheel.png") no-repeat scroll 0 center transparent;
+}
+
+.list-user li {
+    background: url("../images/icons/list-user.png") no-repeat scroll 0 center transparent;
+}
+
+/*-----------------------accordion--------------------------*/
+
+div.tz_accordion {
+    margin-top: 0;
+}
+
+div.tz_news .tz_accordion h3.tz_title:hover {
+    cursor: pointer;
+}
+
+div.tz_news .tz_accordion h3.tz_title:first-child {
+    border-top: 0;
+}
+
+div.tz_news .tz_accordion h3.tz_title {
+    background: url("../images/bg-accordion.png") no-repeat scroll 10px -167px rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #393939;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #C5C5C5;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 0 10px 40px;
+    line-height: 30px;
+    margin: 0;
+}
+
+div.tz_news .tz_accordion h3.open {
+    background-position: 10px 18px;
+}
+
+.info_accordion {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    padding: 30px 15px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    display: none;
+}
+
+/*-----------------tabs-------------------------------*/
+
+#Shortcode_myTab li {
+    padding: 0;
+}
+
+#Shortcode_myTab>.active>a,
+#Shortcode_myTab>.active>a:hover,
+#Shortcode_myTab>.active>a:focus {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FFFFFF;
+    border-color: #282828;
+    border-image: none;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    color: #009900;
+    cursor: default;
+}
+
+#Shortcode_myTab>li>a {
+    border: none;
+    border-radius: 0;
+    line-height: 14px;
+    font-size: 14px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: #515050;
+    padding: 11px 0px 11px 0px;
+    margin: 0px 30px 0px 0px;
+}
+
+.tab-sh-content {
+    color: #515050;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    color: #515050;
+}
+
+.tab-sh-content .tab-pane {
+    color: #515050;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    color: #515050;
+}
+
+/*----------------------pringcing-----------------------------*/
+
+.alert {
+    line-height: 30px;
+}
+
+blockquote p {
+    font-size: 13px !important;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: italic;
+}

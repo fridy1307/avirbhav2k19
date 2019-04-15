@@ -16,6 +16,12 @@ class point(models.Model):
     def __str__(self):
         return self.name
 
-# def lanister(models.Model):
-#     for_event = models.CharField(max_length=200)
-    
+
+class add_point(models.Model):
+    name = models.CharField(max_length=500)
+    lenisters = models.IntegerField(blank=True, null=True)
+    baratheons = models.IntegerField(blank=True, null=True)
+    targaryens = models.IntegerField(blank=True, null=True)
+    starks = models.IntegerField(blank=True, null=True)
+    def __str__(self):
+        return self.name

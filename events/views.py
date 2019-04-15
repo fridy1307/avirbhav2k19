@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import egg_drop_item_list
 
 def index(request):
     return render(request, 'events/index.html')
@@ -23,3 +24,10 @@ def base2(request):
 
 def castle(request):
     return render(request, 'events/Craft/castle1.html')
+
+def egg_drop(request):
+    list = egg_drop_item_list.objects.all()
+    context = {
+        'list':list,
+    }
+    return render(request, "events/eggdrop/index.html", context)

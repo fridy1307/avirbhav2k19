@@ -1,23 +1,39 @@
 from django.shortcuts import render
-from .models import event_category, point
+from .models import event_category, point, add_point
 
 # Create your views here.
 def index(request):
     pass
 
 def pointstable(request):
-    event_details = event_category.objects.all()
-    points = []
-    for i in range(len(event_details)+1):
-        points.append(point.objects.filter(event_id = i+1))
-    dic = {}
-    for i in range(len(event_details)+1):
-        event_details[i]
-        for j in range(len(points[i])):
-            points[i][j]
+    points = add_point.objects.all()
+    lenisters_p = 0
+    baratheons_p = 0
+    targaryens_p = 0
+    starks_p = 0
+    lenister = [90]
+    baratheon = [75]
+    targaryen = [45]
+    stark = [-40]
+    for point in points:
+        lenister.append(point.lenisters)
+        baratheon.append(point.baratheons)
+        targaryen.append(point.targaryens)
+        stark.append(point.starks)
+    for p in lenister:
+        lenisters_p += p
+    for p in baratheon:
+        baratheons_p += p
+    for p in targaryen:
+        targaryens_p += p
+    for p in stark:
+        starks_p += p
+
     context = {
-        'length': len(event_details),
-        'event_details' : event_details,
         'points': points,
+        'lenisters':lenisters_p,
+        'baratheons':baratheons_p,
+        'targaryens':targaryens_p,
+        'starks':starks_p,
     }
     return render(request, 'points/pointstable.html', context)

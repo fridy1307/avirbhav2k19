@@ -15,7 +15,7 @@ urlpatterns = [
     path('craft/dcrossing', TemplateView.as_view(template_name="events/Craft/dcrossing.html"), name='dcrossing'),
     path('craft/rebirth', TemplateView.as_view(template_name="events/Craft/rebirth.html"), name='rebirth'),
     
-    path('dancing', TemplateView.as_view(template_name="events/dance/index.html"), name='dancing'),
+    path('dancing', TemplateView.as_view(template_name="events/Dance/index.html"), name='dancing'),
     
     path('singing', TemplateView.as_view(template_name="events/singing/index.html"), name='singing'),
     
@@ -31,6 +31,8 @@ urlpatterns = [
     # path('litif/', TemplateView.as_view(template_name="events/Literary/literary.html"), name='literary'),
     
     path('technical', views.technical, name='technical'),
+    
+    path('eggdrop', views.egg_drop, name='eggdrop'),
     
     path('base2', TemplateView.as_view(template_name="base2.html"), name='base2'),
     path('base3', TemplateView.as_view(template_name="base3.html"), name='base3'),

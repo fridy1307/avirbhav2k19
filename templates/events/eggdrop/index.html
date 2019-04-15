@@ -1,0 +1,102 @@
+{% extends 'base3.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1 class="text-center display-1 font-weight-bold">Egg Drop Challenge</h1>
+
+    <h1 class="display-3">Intro</h1>
+    <div class="row">
+        <div class="col-8">
+            <p style="font-size:1.5rem;">
+            Egg drop challenge is an on spot event in which teams have to design a compact
+            structure using different types of materials acquired by them via an auction. Teams
+            have to drop the structure from a height of 40ft. The aim is to prevent the egg from
+            cracking.
+        </p>
+        </div>
+        <div class="col-4">
+            <img src="/static/events/eggdrop/egg-drop.png" alt="" width="100%" height="100%">
+        </div>
+    </div>
+    <h1 class="display-3">Event Structure</h1>
+    <p style="font-size:1.5rem;">
+    Online disclosure of materials for the structure. Teams are required to decide on
+    their design and choice of materials keeping in mind the fixed virtual money
+    provided to them. <br>
+    On the day of event teams will be required to submit their material requirements.
+    1hr shall be allotted for making the structure. <br>
+    After an hour, the structures of each team shall be tested.</p>
+
+    <h1 class="display-3">Rules:</h1>
+    <ol>
+            <li>Maximum size of structure – 12*12*12(inch)</li>
+            <li>Fixed height – 20 feet (Round 1) | 30 feet (Round 2)</li>
+            <li>Maximum of 5 members per team is allowed.</li>
+            <li>Use of adhesives between Material and Egg is not permitted.</li>
+            <li>Maximum time will be 1 hour for designing the structure after getting material from auctioning.</li>
+            <li>The structure should be dropped with zero velocity.</li>
+            <li>Two chances shall be given to each Team. However, the second chance will lead to a penalty of 10 points.</li>
+            <li>Teams are not allowed to take the structure with them.</li>
+            <li>Teams can only use material provided at that time through Auctioning. Using materials from outside will lead to disqualification.</li>
+    </ol>
+
+    <h1 class="display-3">Judging Criteria</h1>
+    <p style="font-size:1.5rem;">
+    The model will be evaluated based on its effectiveness, simplicity, design
+    explanation, aesthetics and time to design the model. There will be some penalty in
+    case the model doesn’t work in the first attempt.
+    </p>
+
+
+    <h1 class="display-3">Grading Policy (out of xxx points) </h1>
+    <p style="font-size:1.5rem;">
+        <ul>
+            <li>The model will be graded only if the egg remains intact or is just partially cracked (content of the egg doesn’t come out).</li>
+            <li>Partially Cracked Egg = x points</li>
+            <li>Intact Egg = x points</li>
+            <li>Simple & Effective design = x points</li>
+            <li>Design explanation = x points </li>
+            <li>Time taken - &lt;30 min = x points, &lt;45 min = x points </li>
+            <li>Aesthetics = x points</li>
+            <li>-10 points for using the second chance.</li>
+            <li>Weightage will be higher for structures with the lowest amount of virtual money used.</li>
+        </ul>
+    </p>
+
+
+    <h1 class="display-3">Materials Available</h1>
+    <p style="font-size:1.5rem;">
+    All the participating groups will be given an equal amount of virtual money worth
+    Rs.100 which they will use in buying the materials they are planning to use.</p>
+    <h1 class="display-3">
+    List of materials available and their virtual prices:</h1>
+
+    <table class="table bg-white" style="color:black;">
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>ITEMS</th>
+                <th>PRICE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in list %}
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.item}}</td>
+                <td>{{item.price}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <p class="text-center font-weight-bold">*NOTE: Apart from the adhesive provided, participants can use their own adhesive.</p>
+</div>
+{% endblock %}

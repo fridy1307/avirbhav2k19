@@ -1,2 +1,26 @@
-{% extends 'base2.html' %}
+{% extends 'base3.html' %}
+{% block head %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+{% endblock %}
 
+{% block body %}
+<div class="container">
+<div class="row">
+    {% for sponser in sponsers %}
+    <div class="col">
+<div class="card" style="width:400px">
+    <img class="card-img-top" src="{{sponser.photo}}" alt="Image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">{{sponser.name}}</h4>
+      <p class="card-text">{{sponser.batch}}</p>
+      <a href="{{sponser.fb_link}}" class="btn btn-primary stretched-link">Fb Profile</a>
+    </div>
+    {% endfor %}
+</div>
+</div>
+</div>
+</div>
+  {% endblock %}
