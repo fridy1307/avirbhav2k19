@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>AVIRBHAV2k19 | Season 8</title>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Page</h1>
+        <form method="POST" action="{% url 'register' %}">
+            {% csrf_token %}
+
+            {% if form.error %}
+            <p>Errors in form</p>
+            {% endif %}
+
+            <p>Full Name: <input type="text" name="name"></p>
+            <p>House: 
+                <select name="house">
+                    <option value="Baratheon">Baratheons</option>
+                    <option value="Targaryen">Targaryen</option>
+                    <option value="Lannister">Lannister</option>
+                    <option value="Stark">Stark</option>
+                </select>
+            </p>
+            {{ form }}
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>

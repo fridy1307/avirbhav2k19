@@ -17,7 +17,7 @@
             <p style="font-size:1.5rem;">
             Egg drop challenge is an on spot event in which teams have to design a compact
             structure using different types of materials acquired by them via an auction. Teams
-            have to drop the structure from a height of 40ft. The aim is to prevent the egg from
+            have to drop the structure from a fixed height. The aim is to prevent the egg from
             cracking.
         </p>
         </div>
@@ -28,11 +28,11 @@
     <h1 class="display-3">Event Structure</h1>
     <p style="font-size:1.5rem;">
     Online disclosure of materials for the structure. Teams are required to decide on
-    their design and choice of materials keeping in mind the fixed virtual money
+    their design and choice of materials keeping in mind the fixed amount ₹100 
     provided to them. <br>
-    On the day of event teams will be required to submit their material requirements.
+    Eggs will be provided next day <br>
     1hr shall be allotted for making the structure. <br>
-    After an hour, the structures of each team shall be tested.</p>
+    After an hour, the structures of each team shall be submitted and tested on next day.</p>
 
     <h1 class="display-3">Rules:</h1>
     <ol>
@@ -40,7 +40,8 @@
             <li>Fixed height – 20 feet (Round 1) | 30 feet (Round 2)</li>
             <li>Maximum of 5 members per team is allowed.</li>
             <li>Use of adhesives between Material and Egg is not permitted.</li>
-            <li>Maximum time will be 1 hour for designing the structure after getting material from auctioning.</li>
+            <li>1 hour will be provided for gathering the materials</li>
+            <li>Maximum time will be 1 hour for designing the structure</li>
             <li>The structure should be dropped with zero velocity.</li>
             <li>Two chances shall be given to each Team. However, the second chance will lead to a penalty of 10 points.</li>
             <li>Teams are not allowed to take the structure with them.</li>
@@ -59,14 +60,11 @@
     <p style="font-size:1.5rem;">
         <ul>
             <li>The model will be graded only if the egg remains intact or is just partially cracked (content of the egg doesn’t come out).</li>
-            <li>Partially Cracked Egg = x points</li>
-            <li>Intact Egg = x points</li>
-            <li>Simple & Effective design = x points</li>
-            <li>Design explanation = x points </li>
-            <li>Time taken - &lt;30 min = x points, &lt;45 min = x points </li>
-            <li>Aesthetics = x points</li>
+            <li>Partially Cracked Egg = 30 points</li>
+            <li>Intact Egg = 50 points</li>
+            <li>Simple & Effective design = 10 points</li>
+            <li>Design explanation = 10 points</li>
             <li>-10 points for using the second chance.</li>
-            <li>Weightage will be higher for structures with the lowest amount of virtual money used.</li>
         </ul>
     </p>
 
@@ -81,17 +79,13 @@
     <table class="table bg-white" style="color:black;">
         <thead>
             <tr>
-                <th>S.No.</th>
                 <th>ITEMS</th>
-                <th>PRICE</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="text-center">
             {% for item in list %}
             <tr>
-                <td>{{item.id}}</td>
                 <td>{{item.item}}</td>
-                <td>{{item.price}}</td>
             </tr>
             {% endfor %}
         </tbody>

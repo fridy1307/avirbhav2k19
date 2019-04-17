@@ -27,6 +27,11 @@ urlpatterns = [
 
     path('online/pubg', views.pubg, name='pubg'),
     path('rampwalk', views.rampwalk, name='rampwalk'),
+
+    path('prayagdarshan', views.city, name='city'),
+
+    path('paheli', views.paheli_fun, name='paheli'),
+
     path('literary', views.literary, name='literary'),
     # path('litif/', TemplateView.as_view(template_name="events/Literary/literary.html"), name='literary'),
     

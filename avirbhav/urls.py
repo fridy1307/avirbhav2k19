@@ -13,5 +13,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('sponsers/',include('sponsers.urls'), name='sponsers'),
     path('contact/', views.contact, name='contact'),
+    path('auth/', include('django.contrib.auth.urls')),
+    path('accounts/', include('accounts.urls')),
 ]
 urlpatterns += staticfiles_urlpatterns()

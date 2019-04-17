@@ -1,6 +1,5 @@
-from django.shortcuts import render
-from .models import egg_drop_item_list
-
+from django.shortcuts import render, redirect
+from .models import egg_drop_item_list, know_your_city, paheli
 def index(request):
     return render(request, 'events/index.html')
 
@@ -31,3 +30,22 @@ def egg_drop(request):
         'list':list,
     }
     return render(request, "events/eggdrop/index.html", context)
+
+def paheli_fun(request):
+    if request.user.is_authenticated:
+        paheli_imgs = paheli.objects.all()
+        context = {
+            'paheli_imgs': paheli_imgs,
+        }
+        return render(request, 'events/paheli/index.html', context)
+    
+    else:
+        return redirect('/auth/login', next='paheli')
+    
+def city(request):
+    if request.user.is_authenticated:
+        city_imgs = know_your_city.objects.all()
+        return render(request, 'events/city/index.html', context)
+    
+    else:
+        return redirect('/auth/login', next='city')

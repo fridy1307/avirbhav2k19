@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AVIRBHAV2k19 | Season 8</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    {% if form.error %}
+     <p>Wrong Information!!</p>
+    {% endif %}
+
+    {% if next %}
+        <p>Can't Access that page!</p>
+    {% endif %}
+
+
+    <form method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
+
+        <p>Username: {{ form.username }}</p>
+        <p>Password: {{ form.password }}</p>
+
+        <p><input type="submit" value="Log in"></p>
+        <input type="hidden" name="next" value="{{ next }}">
+    </form>
+    <a href="{% url 'register' %}">Sign Up</a>
+</body>
+</html>
