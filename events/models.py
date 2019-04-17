@@ -34,3 +34,4 @@ class know_your_city(models.Model):
 
 class paheli(models.Model):
     photo = models.ImageField(upload_to=get_paheli_path)
+    answer = models.CharField(max_length=500)
